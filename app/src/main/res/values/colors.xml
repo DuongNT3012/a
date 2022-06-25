@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gnt_white">#FFFFFF</color>
+    <color name="gnt_blue">#4285f4</color>
+    <color name="gnt_outline">#E0E0E0</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_font">#323232</color>
+    <color name="blue_font">#76D9FF</color>
+</resources>

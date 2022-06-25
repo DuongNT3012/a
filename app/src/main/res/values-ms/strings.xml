@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="type_the_page_number">Taip nombor halaman</string>
+    <string name="cancel">Batal</string>
+    <string name="ok">okey</string>
+    <string name="enter_page_number">Sila masukkan nombor halaman</string>
+    <string name="done">Selesai</string>
+    <string name="crop">Potong</string>
+    <string name="order_by_name_az">Dengan Nama Fail A-Z</string>
+    <string name="order_by_name_za">Dengan Nama Fail Z-A</string>
+    <string name="restore">Pulihkan</string>
+    <string name="pick_image_intent_chooser_title">Pilih sumber</string>
+    <string name="tv_edittext1">Cari</string>
+    <string name="all">Semua</string>
+
+    <string name="fab_favourite">Kegemaran</string>
+    <string name="fab_gotowith">Pergi ke halaman</string>
+    <string name="fab_openwith">Buka dengan</string>
+    <string name="fab_share">Kongsi</string>
+    <string name="fab_snapscreen">Ambil Imej</string>
+    <string name="screenshot">Tangkapan skrin</string>
+    <string name="recent_files">Fail terkini</string>
+
+    <string name="order_by_accessed_time">Mengikut Masa Dicapai</string>
+    <string name="order_by_created_time">Mengikut Masa Dicipta</string>
+
+    <string name="type_your_file_name">Taip nama fail anda</string>
+
+    <string name="toast_ads">Tindakan ini boleh mengandungi iklan</string>
+    <string name="no_files_found">Tiada fail ditemui</string>
+    <string name="Privacy_Policy"><u>Dasar Privasi</u></string>
+    <string name="emty_file"><u>Sila tambah fail baharu untuk memulakan kerja anda.</u></string>
+    <string name="language">Bahasa</string>
+    <string name="skip">Langkau</string>
+    <string name="back">belakang</string>
+    <string name="next">Seterusnya</string>
+    <string name="Rate">Kadar</string>
+    <string name="Share">Kongsi</string>
+    <string name="Feedback">Maklum balas</string>
+    <string name="About">Tentang</string>
+    <string name="All_Files">Semua fail</string>
+    <string name="Files">Fail</string>
+    <string name="IMAGE">IMEJ</string>
+    <string name="TEXT">TEKS</string>
+    <string name="BOOKMARK">PENANDA BUKU</string>
+    <string name="RECENT_FILES">FAIL TERBARU</string>
+    <string name="ALL_FILES">SEMUA FAIL</string>
+    <string name="No_File_Here">Tiada Fail Di Sini!</string>
+    <string name="get_started">Mulakan!</string>
+    <string name="Recent">Baru-baru ini</string>
+    <string name="Bookmark">Penanda buku</string>
+    <string name="Professional_Document_Reader">Pembaca Dokumen Profesional</string>
+    <string name="Our_app_can_read">Apl kami boleh membaca mana-mana fail dokumen yang anda miliki.</string>
+    <string name="Manager_Document_Tools">Alatan Dokumen Pengurus</string>
+    <string name="Supply_many_integrated">Bekalkan banyak alatan bersepadu yang akan membantu anda menjadikannya mudah.</string>
+    <string name="Snap_Image_on_Document">Tangkap Imej pada Dokumen</string>
+    <string name="Easy_Snap_Image">Snap Imej Mudah untuk berkongsi kepada orang lain.</string>
+    <string name="Image">Imej</string>
+    <string name="For_Android">Untuk Android</string>
+    <string name="Version">Versi</string>
+    <string name="Your_opinion_matter_to_us">Pendapat anda penting bagi kami!</string>
+    <string name="If_you_enjoy">Jika anda menikmati Pembaca Pejabat ini, adakah anda keberatan menilai kami di Google Play?</string>
+    <string name="Rate_us">Nilaikan kami</string>
+    <string name="Not_now">Bukan sekarang</string>
+    <string name="Please_send_us_some_feedback">Sila hantar maklum balas kepada kami!</string>
+    <string name="Write_some_feedback">Tulis beberapa maklum balas</string>
+    <string name="More_app">Lagi Apl</string>
+    <string name="exit">Adakah anda pasti akan keluar dari aplikasi ini?</string>
+    <string name="send_feedback">Hantar maklumbalas</string>
+</resources>

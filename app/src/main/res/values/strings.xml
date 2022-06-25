@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name" translatable="false">Office Reader</string>
+
+    <!--    ads test-->
+    <string name="app_id" translatable="false">ca-app-pub-4973559944609228~2346710863</string>
+    <string name="inter_splash" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="inter_intro" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="appopen_resume" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner_all" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="native_exit" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="inter_file" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_home" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_language" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+
+    <!--    ads real-->
+<!--    <string name="app_id" translatable="false"></string>-->
+<!--    <string name="inter_splash" translatable="false"></string>-->
+<!--    <string name="inter_intro" translatable="false"></string>-->
+<!--    <string name="appopen_resume" translatable="false"></string>-->
+<!--    <string name="banner_all" translatable="false"></string>-->
+<!--    <string name="native_exit" translatable="false"></string>-->
+<!--    <string name="inter_file" translatable="false"></string>-->
+<!--    <string name="native_home" translatable="false"></string>-->
+<!--    <string name="native_language" translatable="false"></string>-->
+
+    <string name="type_the_page_number">Type the page number</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="enter_page_number">Please enter the page number</string>
+    <string name="done">Done</string>
+    <string name="crop">Crop</string>
+    <string name="order_by_name_az">By File Name A-Z</string>
+    <string name="order_by_name_za">By File Name Z-A</string>
+    <string name="restore">Restore</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="tv_edittext1">Search</string>
+    <string name="all">All</string>
+
+    <string name="fab_favourite">Favourite</string>
+    <string name="fab_gotowith">Go to page</string>
+    <string name="fab_openwith">Open With</string>
+    <string name="fab_share">Share</string>
+    <string name="fab_snapscreen">Take Image</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="recent_files">Recent files</string>
+
+    <string name="order_by_accessed_time">By Accessed Time</string>
+    <string name="order_by_created_time">By Created Time</string>
+
+    <string name="type_your_file_name">Type your file name</string>
+
+    <string name="toast_ads">This action can contain ads</string>
+    <string name="no_files_found">No files found</string>
+    <string name="Privacy_Policy"><u>Privacy Policy</u></string>
+    <string name="emty_file"><u>Please add a new file to start your work.</u></string>
+    <string name="language">Language</string>
+    <string name="skip">Skip</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="Rate">Rate</string>
+    <string name="Share">Share</string>
+    <string name="Feedback">Feedback</string>
+    <string name="About">About</string>
+    <string name="All_Files">All Files</string>
+    <string name="Files">Files</string>
+    <string name="IMAGE">IMAGE</string>
+    <string name="TEXT">TEXT</string>
+    <string name="BOOKMARK">BOOKMARK</string>
+    <string name="RECENT_FILES">RECENT FILES</string>
+    <string name="ALL_FILES">ALL FILES</string>
+    <string name="No_File_Here">No File Here!</string>
+    <string name="get_started">Get Started!</string>
+    <string name="Recent">Recent</string>
+    <string name="Bookmark">Bookmark</string>
+    <string name="Professional_Document_Reader">Professional Document Reader</string>
+    <string name="Our_app_can_read">Our app can read any document files that you have.</string>
+    <string name="Manager_Document_Tools">Manager Document Tools</string>
+    <string name="Supply_many_integrated">Supply many integrated tools that will help you make it simple.</string>
+    <string name="Snap_Image_on_Document">Snap Image on Document</string>
+    <string name="Easy_Snap_Image">Easy Snap Image to share it to other.</string>
+    <string name="Image">Image</string>
+    <string name="For_Android">For Android</string>
+    <string name="Version">Version</string>
+    <string name="Your_opinion_matter_to_us">Your opinion matter to us!</string>
+    <string name="If_you_enjoy">If you enjoy this Office Reader, would you mind rating us on the Google Play, then?</string>
+    <string name="Rate_us">Rate us</string>
+    <string name="Not_now">Not now</string>
+    <string name="Please_send_us_some_feedback">Please send us some feedback!</string>
+    <string name="Write_some_feedback">Write some feedback</string>
+    <string name="More_app">More Apps</string>
+    <string name="exit">Are you sure to quit this app ?</string>
+    <string name="send_feedback">Send FeedBack</string>
+</resources>

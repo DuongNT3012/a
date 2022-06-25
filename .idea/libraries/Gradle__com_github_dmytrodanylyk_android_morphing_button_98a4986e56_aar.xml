@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.dmytrodanylyk:android-morphing-button:98a4986e56@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4cf0acc5045dd786e0520f98a8cf8305/jetified-android-morphing-button-98a4986e56/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4cf0acc5045dd786e0520f98a8cf8305/jetified-android-morphing-button-98a4986e56/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4cf0acc5045dd786e0520f98a8cf8305/jetified-android-morphing-button-98a4986e56/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f006994fda646c0dc663cf83cc6e4eb/jetified-android-morphing-button-98a4986e56/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f006994fda646c0dc663cf83cc6e4eb/jetified-android-morphing-button-98a4986e56/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f006994fda646c0dc663cf83cc6e4eb/jetified-android-morphing-button-98a4986e56/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6075cacc22f4b439b1f0dc2c78221f70/jetified-android-morphing-button-98a4986e56/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6075cacc22f4b439b1f0dc2c78221f70/jetified-android-morphing-button-98a4986e56/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6075cacc22f4b439b1f0dc2c78221f70/jetified-android-morphing-button-98a4986e56/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/569977bb5782fc13edb8ace4e90043f3/jetified-android-morphing-button-98a4986e56/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/569977bb5782fc13edb8ace4e90043f3/jetified-android-morphing-button-98a4986e56/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/569977bb5782fc13edb8ace4e90043f3/jetified-android-morphing-button-98a4986e56/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f60903ccb2c0bdec30712e37d9954c1f/jetified-android-morphing-button-98a4986e56/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f60903ccb2c0bdec30712e37d9954c1f/jetified-android-morphing-button-98a4986e56/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f60903ccb2c0bdec30712e37d9954c1f/jetified-android-morphing-button-98a4986e56/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

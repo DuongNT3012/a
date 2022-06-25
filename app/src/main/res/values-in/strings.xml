@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="type_the_page_number">Ketik nomor halaman</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="ok">Oke</string>
+    <string name="enter_page_number">Silakan masukkan nomor halaman</string>
+    <string name="done">Selesai</string>
+    <string name="crop">Tanaman</string>
+    <string name="order_by_name_az">Berdasarkan Nama File A-Z</string>
+    <string name="order_by_name_za">Berdasarkan Nama File Z-A</string>
+    <string name="restore">Memulihkan</string>
+    <string name="pick_image_intent_chooser_title">Pilih sumber</string>
+    <string name="tv_edittext1">Mencari</string>
+    <string name="all">Semua</string>
+
+    <string name="fab_favourite">Favorit</string>
+    <string name="fab_gotowith">Buka halaman</string>
+    <string name="fab_openwith">Buka dengan</string>
+    <string name="fab_share">Membagikan</string>
+    <string name="fab_snapscreen">Ambil Gambar</string>
+    <string name="screenshot">Tangkapan layar</string>
+    <string name="recent_files">File terbaru</string>
+
+    <string name="order_by_accessed_time">Berdasarkan Waktu yang Diakses</string>
+    <string name="order_by_created_time">Berdasarkan Waktu Dibuat</string>
+
+    <string name="type_your_file_name">Ketik nama file Anda</string>
+
+    <string name="toast_ads">Tindakan ini dapat berisi iklan</string>
+    <string name="no_files_found">Tidak ada file yang ditemukan</string>
+    <string name="Privacy_Policy"><u>Kebijakan Privasi</u></string>
+    <string name="emty_file"><u>Silakan tambahkan file baru untuk memulai pekerjaan Anda.</u></string>
+    <string name="language">Bahasa</string>
+    <string name="skip">Melewati</string>
+    <string name="back">Kembali</string>
+    <string name="next">Lanjut</string>
+    <string name="Rate">Kecepatan</string>
+    <string name="Share">Membagikan</string>
+    <string name="Feedback">Masukan</string>
+    <string name="About">Tentang</string>
+    <string name="All_Files">Semua data</string>
+    <string name="Files">File</string>
+    <string name="IMAGE">GAMBAR</string>
+    <string name="TEXT">TEKS</string>
+    <string name="BOOKMARK">PENANDA BUKU</string>
+    <string name="RECENT_FILES">FILE TERBARU</string>
+    <string name="ALL_FILES">SEMUA DATA</string>
+    <string name="No_File_Here">Tidak Ada File Di Sini!</string>
+    <string name="get_started">Memulai!</string>
+    <string name="Recent">Terkini</string>
+    <string name="Bookmark">Penanda buku</string>
+    <string name="Professional_Document_Reader">Pembaca Dokumen Profesional</string>
+    <string name="Our_app_can_read">Aplikasi kami dapat membaca file dokumen apa pun yang Anda miliki.</string>
+    <string name="Manager_Document_Tools">Alat Dokumen Manajer</string>
+    <string name="Supply_many_integrated">Sediakan banyak alat terintegrasi yang akan membantu Anda membuatnya sederhana.</string>
+    <string name="Snap_Image_on_Document">Jepret Gambar di Dokumen</string>
+    <string name="Easy_Snap_Image">Snap Gambar Mudah untuk membagikannya ke orang lain.</string>
+    <string name="Image">Gambar</string>
+    <string name="For_Android">Untuk Android</string>
+    <string name="Version">Versi: kapan</string>
+    <string name="Your_opinion_matter_to_us">Pendapat Anda penting bagi kami!</string>
+    <string name="If_you_enjoy">Jika Anda menikmati Office Reader ini, maukah Anda menilai kami di Google Play?</string>
+    <string name="Rate_us">Nilai kami</string>
+    <string name="Not_now">Tidak sekarang</string>
+    <string name="Please_send_us_some_feedback">Silakan kirim umpan balik kepada kami!</string>
+    <string name="Write_some_feedback">Tulis beberapa umpan balik</string>
+    <string name="More_app">Aplikasi tambahan lainnya</string>
+    <string name="exit">Apakah Anda yakin untuk keluar dari aplikasi ini?</string>
+    <string name="send_feedback">Kirim Umpan Balik</string>
+</resources>

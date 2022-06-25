@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/selector_dialog_order"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/layout_order_by_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imv_tick_by_name"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_tick" />
+
+            <ImageView
+                android:id="@+id/imv_order_by_name"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_filter_a_z" />
+
+            <TextView
+                android:id="@+id/tv_order_by_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/order_by_name_az"
+                android:textColor="#818181"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DDE2E5" />
+
+        <LinearLayout
+            android:id="@+id/layout_order_by_name_za"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imv_tick_by_name_za"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_tick" />
+
+            <ImageView
+                android:id="@+id/imv_order_by_name_za"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_filter_z_a" />
+
+            <TextView
+                android:id="@+id/tv_order_by_name_za"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/order_by_name_za"
+                android:textColor="#818181"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DDE2E5" />
+
+        <LinearLayout
+            android:id="@+id/layout_order_by_created_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imv_tick_by_create"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_tick" />
+
+            <ImageView
+                android:id="@+id/imv_order_by_created_time"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="@dimen/_2sdp"
+                app:srcCompat="@drawable/ic_filter_time" />
+
+            <TextView
+                android:id="@+id/tv_order_by_created_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/order_by_created_time"
+                android:textColor="#818181"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+
+            android:background="#DDE2E5" />
+
+        <LinearLayout
+            android:id="@+id/layout_order_by_accessed_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imv_tick_by_accessed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_tick" />
+
+            <ImageView
+                android:id="@+id/imv_order_by_accessed_time"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_filter_access_time" />
+
+            <TextView
+                android:id="@+id/tv_order_by_accessed_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/order_by_accessed_time"
+                android:textColor="#818181"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

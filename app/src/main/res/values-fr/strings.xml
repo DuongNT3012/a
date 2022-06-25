@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="type_the_page_number">Tapez le numéro de page</string>
+    <string name="cancel">Annuler</string>
+    <string name="ok">D\'ACCORD</string>
+    <string name="enter_page_number">Veuillez entrer le numéro de la page</string>
+    <string name="done">Fait</string>
+    <string name="crop">Recadrer</string>
+    <string name="order_by_name_az">Trier par nom de fichier A-Z</string>
+    <string name="order_by_name_za">Trier par nom de fichier Z-A</string>
+    <string name="restore">Restaurer</string>
+    <string name="pick_image_intent_chooser_title">Sélectionner la source</string>
+    <string name="tv_edittext1">Cliquez ici pour rechercher</string>
+    <string name="all">Tout</string>
+
+    <string name="fab_favourite">Favori</string>
+    <string name="fab_gotowith">Aller à la page</string>
+    <string name="fab_openwith">Ouvrir avec</string>
+    <string name="fab_share">Partager</string>
+    <string name="fab_snapscreen">Écran instantané</string>
+    <string name="screenshot">Capture d\'écran</string>
+    <string name="recent_files">Fichiers récents</string>
+
+    <string name="order_by_accessed_time">Trier par heure d\'accès</string>
+    <string name="order_by_created_time">Trier par heure de création</string>
+
+    <string name="type_your_file_name">Tapez votre nom de fichier</string>
+
+    <string name="toast_ads">Cette action peut contenir des publicités</string>
+
+    <string name="no_files_found">Aucun fichier trouvé</string>
+    <string name="Privacy_Policy"><u>Politique de confidentialité</u></string>
+    <string name="emty_file"><u>Veuillez ajouter un nouveau fichier pour commencer votre travail.</u></string>
+    <string name="language">Langue</string>
+    <string name="skip">Sauter</string>
+    <string name="back">Retour</string>
+    <string name="next">Prochain</string>
+    <string name="Rate">Évaluer</string>
+    <string name="Share">Partager</string>
+    <string name="Feedback">Retour d\'information</string>
+    <string name="About">À propos de</string>
+    <string name="All_Files">Tous les fichiers</string>
+    <string name="Files">Des dossiers</string>
+    <string name="IMAGE">IMAGE</string>
+    <string name="TEXT">TEXTE</string>
+    <string name="BOOKMARK">SIGNET</string>
+    <string name="RECENT_FILES">FICHIERS RÉCENTS</string>
+    <string name="ALL_FILES">TOUS LES FICHIERS</string>
+    <string name="No_File_Here">Pas de fichier ici !</string>
+    <string name="get_started">Commencer!</string>
+    <string name="Recent">Récent</string>
+    <string name="Bookmark">Signet</string>
+    <string name="Professional_Document_Reader">Lecteur de documents professionnel</string>
+    <string name="Our_app_can_read">Notre application peut lire tous les fichiers de documents que vous avez.</string>
+    <string name="Manager_Document_Tools">Outils de documentation du gestionnaire</string>
+    <string name="Supply_many_integrated">Fournissez de nombreux outils intégrés qui vous aideront à simplifier les choses.</string>
+    <string name="Snap_Image_on_Document">Capturer l\'image sur le document</string>
+    <string name="Easy_Snap_Image">Easy Snap Image pour le partager avec d\'autres.</string>
+    <string name="Image">Image</string>
+    <string name="For_Android">Pour Android</string>
+    <string name="Version">Version</string>
+    <string name="Your_opinion_matter_to_us">Votre avis compte pour nous !</string>
+    <string name="If_you_enjoy">Si vous aimez Office Reader, pourriez-vous nous noter sur Google Play, alors ?</string>
+    <string name="Rate_us">Évaluez nous</string>
+    <string name="Not_now">Pas maintenant</string>
+    <string name="Please_send_us_some_feedback">S\'il vous plaît envoyez-nous vos commentaires!</string>
+    <string name="Write_some_feedback">Rédigez des commentaires</string>
+    <string name="More_app">Plus d\'applications</string>
+    <string name="exit">Êtes-vous sûr de quitter cette application ?</string>
+    <string name="send_feedback">Envoyer un commentaire</string>
+</resources>

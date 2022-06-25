@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.SimpleMobileTools:Simple-Commons:d39bf6263d@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/686dcc21d8772fe5b04d43af4cb4eefd/jetified-Simple-Commons-d39bf6263d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/686dcc21d8772fe5b04d43af4cb4eefd/jetified-Simple-Commons-d39bf6263d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/686dcc21d8772fe5b04d43af4cb4eefd/jetified-Simple-Commons-d39bf6263d/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.SimpleMobileTools/Simple-Commons/d39bf6263d/8f350b134e7968a8632b88ee913581951a3697ba/Simple-Commons-d39bf6263d-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

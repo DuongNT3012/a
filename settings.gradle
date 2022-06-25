@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "OfficeReaderReskin"
+startParameter.offline=false
+include ':office'

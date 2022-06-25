@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="type_the_page_number">Digite o número da página</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">OK</string>
+    <string name="enter_page_number">Por favor, insira o número da página</string>
+    <string name="done">Feito</string>
+    <string name="crop">Colheita</string>
+    <string name="order_by_name_az">Ordenar por nome de arquivo A-Z</string>
+    <string name="order_by_name_za">Ordenar por nome de arquivo Z-A</string>
+    <string name="restore">Restaurar</string>
+    <string name="pick_image_intent_chooser_title">Selecione a fonte</string>
+    <string name="tv_edittext1">Clique aqui para pesquisar</string>
+    <string name="all">Tudo</string>
+
+    <string name="fab_favourite">Favorito</string>
+    <string name="fab_gotowith">Vá para página</string>
+    <string name="fab_openwith">Abrir com</string>
+    <string name="fab_share">Compartilhar</string>
+    <string name="fab_snapscreen">Tela de encaixe</string>
+    <string name="screenshot">Captura de tela</string>
+    <string name="recent_files">Arquivos recentes</string>
+
+    <string name="order_by_accessed_time">Ordem por hora de acesso</string>
+    <string name="order_by_created_time">Ordem por hora de criação</string>
+
+    <string name="type_your_file_name">Digite o nome do seu arquivo</string>
+
+    <string name="toast_ads">Esta ação pode conter anúncios</string>
+
+    <string name="no_files_found">Nenhum arquivo encontrado</string>
+    <string name="Privacy_Policy"><u>Política de Privacidade</u></string>
+    <string name="emty_file"><u>Adicione um novo arquivo para iniciar seu trabalho.</u></string>
+    <string name="language">Linguagem</string>
+    <string name="skip">Pular</string>
+    <string name="back">De volta</string>
+    <string name="next">Próximo</string>
+    <string name="Rate">Avaliar</string>
+    <string name="Share">Compartilhar</string>
+    <string name="Feedback">Comentários</string>
+    <string name="About">Sobre</string>
+    <string name="All_Files">Todos os arquivos</string>
+    <string name="Files">arquivos</string>
+    <string name="IMAGE">IMAGEM</string>
+    <string name="TEXT">TEXTO</string>
+    <string name="BOOKMARK">MARCA PÁGINAS</string>
+    <string name="RECENT_FILES">ARQUIVOS RECENTES</string>
+    <string name="ALL_FILES">TODOS OS ARQUIVOS</string>
+    <string name="No_File_Here">Nenhum arquivo aqui!</string>
+    <string name="get_started">Iniciar!</string>
+    <string name="Recent">Recente</string>
+    <string name="Bookmark">marca páginas</string>
+    <string name="Professional_Document_Reader">Leitor de documentos profissional</string>
+    <string name="Our_app_can_read">Nosso aplicativo pode ler qualquer arquivo de documento que você tenha.</string>
+    <string name="Manager_Document_Tools">Ferramentas de Documento do Gerente</string>
+    <string name="Supply_many_integrated">Forneça muitas ferramentas integradas que o ajudarão a simplificar.</string>
+    <string name="Snap_Image_on_Document">Ajustar imagem no documento</string>
+    <string name="Easy_Snap_Image">Fácil Snap Image para compartilhá-lo com outros.</string>
+    <string name="Image">Imagem</string>
+    <string name="For_Android">Para Android</string>
+    <string name="Version">Versão</string>
+    <string name="Your_opinion_matter_to_us">Sua opinião é importante para nós!</string>
+    <string name="If_you_enjoy">Se você gosta deste Office Reader, você se importaria de nos classificar no Google Play, então?</string>
+    <string name="Rate_us">Nos avalie</string>
+    <string name="Not_now">Agora não</string>
+    <string name="Please_send_us_some_feedback">Por favor, envie-nos alguns comentários!</string>
+    <string name="Write_some_feedback">Escreva alguns comentários</string>
+    <string name="More_app">Mais aplicativos</string>
+    <string name="exit">Tem certeza de sair deste aplicativo?</string>
+    <string name="send_feedback">Enviar comentários</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="type_the_page_number">I-type ang numero ng pahina</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="ok">OK</string>
+    <string name="enter_page_number">Mangyaring ipasok ang numero ng pahina</string>
+    <string name="done">Tapos na</string>
+    <string name="crop">I-crop</string>
+    <string name="order_by_name_az">Sa Pangalan ng File A-Z</string>
+    <string name="order_by_name_za">Sa Pangalan ng File Z-A</string>
+    <string name="restore">Ibalik</string>
+    <string name="pick_image_intent_chooser_title">Pumili ng pinagmulan</string>
+    <string name="tv_edittext1">Maghanap</string>
+    <string name="all">Lahat</string>
+
+    <string name="fab_favourite">Paborito</string>
+    <string name="fab_gotowith">Pumunta sa pahina</string>
+    <string name="fab_openwith">Buksan Sa</string>
+    <string name="fab_share">Ibahagi</string>
+    <string name="fab_snapscreen">Kunin ang Larawan</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="recent_files">Kamakailang mga file</string>
+
+    <string name="order_by_accessed_time">Sa pamamagitan ng Na-access na Oras</string>
+    <string name="order_by_created_time">Sa pamamagitan ng Nilikhang Oras</string>
+
+    <string name="type_your_file_name">I-type ang iyong pangalan ng file</string>
+
+    <string name="toast_ads">Maaaring maglaman ng mga ad ang pagkilos na ito</string>
+    <string name="no_files_found">Walang nakitang mga file</string>
+    <string name="Privacy_Policy"><u>Patakaran sa Privacy</u></string>
+    <string name="emty_file"><u>Mangyaring magdagdag ng bagong file upang simulan ang iyong trabaho.</u></string>
+    <string name="language">Wika</string>
+    <string name="skip">Laktawan</string>
+    <string name="back">Bumalik</string>
+    <string name="next">Susunod</string>
+    <string name="Rate">Rate</string>
+    <string name="Share">Ibahagi</string>
+    <string name="Feedback">Feedback</string>
+    <string name="About">Tungkol sa</string>
+    <string name="All_Files">Lahat ng File</string>
+    <string name="Files">Mga file</string>
+    <string name="IMAGE">LARAWAN</string>
+    <string name="TEXT">TEKSTO</string>
+    <string name="BOOKMARK">BOOKMARK</string>
+    <string name="RECENT_FILES">MGA KAKAKAILANG FILES</string>
+    <string name="ALL_FILES">LAHAT NG FILES</string>
+    <string name="No_File_Here">Walang File Dito!</string>
+    <string name="get_started">Magsimula!</string>
+    <string name="Recent">Kamakailan</string>
+    <string name="Bookmark">Bookmark</string>
+    <string name="Professional_Document_Reader">Propesyonal na Tagabasa ng Dokumento</string>
+    <string name="Our_app_can_read">Mababasa ng aming app ang anumang mga file ng dokumento na mayroon ka.</string>
+    <string name="Manager_Document_Tools">Mga Tool sa Dokumento ng Tagapamahala</string>
+    <string name="Supply_many_integrated">Magbigay ng maraming pinagsama-samang tool na makakatulong sa iyong gawing simple ito.</string>
+    <string name="Snap_Image_on_Document">Kumuha ng Larawan sa Dokumento</string>
+    <string name="Easy_Snap_Image">Easy Snap Image upang ibahagi ito sa iba.</string>
+    <string name="Image">Imahe</string>
+    <string name="For_Android">Para sa Android</string>
+    <string name="Version">Bersyon</string>
+    <string name="Your_opinion_matter_to_us">Ang iyong opinyon ay mahalaga sa amin!</string>
+    <string name="If_you_enjoy">Kung nasiyahan ka sa Office Reader na ito, wala ka bang balak na i-rate kami sa Google Play, kung gayon?</string>
+    <string name="Rate_us">I-rate kami</string>
+    <string name="Not_now">Hindi ngayon</string>
+    <string name="Please_send_us_some_feedback">Mangyaring magpadala sa amin ng ilang feedback!</string>
+    <string name="Write_some_feedback">Sumulat ng ilang puna</string>
+    <string name="More_app">Higit pang Apps</string>
+    <string name="exit">Sigurado ka bang aalis sa app na ito?</string>
+    <string name="send_feedback">Magbigay ng feedback</string>
+</resources>

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tibbi.reprint:reprint_spass:2f49ba01bb@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2d9a2d1fcbc02f4c3e30ff18e156d4c/jetified-reprint_spass-2f49ba01bb/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/825c87a4968af5d68c54aef45554a770/jetified-reprint_spass-2f49ba01bb/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/825c87a4968af5d68c54aef45554a770/jetified-reprint_spass-2f49ba01bb/jars/libs/sdk-v1.0.0.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/825c87a4968af5d68c54aef45554a770/jetified-reprint_spass-2f49ba01bb/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/825c87a4968af5d68c54aef45554a770/jetified-reprint_spass-2f49ba01bb/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/825c87a4968af5d68c54aef45554a770/jetified-reprint_spass-2f49ba01bb/jars/libs/pass-v1.2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tibbi.reprint/reprint_spass/2f49ba01bb/b247ede5d8ce996d8a73badea599961914087895/reprint_spass-2f49ba01bb-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

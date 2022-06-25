@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OfficeReaderReskin.iml" filepath="$PROJECT_DIR$/.idea/modules/OfficeReaderReskin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OfficeReaderReskin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OfficeReaderReskin.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/office/OfficeReaderReskin.office.iml" filepath="$PROJECT_DIR$/.idea/modules/office/OfficeReaderReskin.office.iml" />
+    </modules>
+  </component>
+</project>

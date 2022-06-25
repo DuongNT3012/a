@@ -1,0 +1,184 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.document.allreader.allofficefilereader" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="21"
+7-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml
+8        android:targetSdkVersion="31" />
+8-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml
+9
+10    <application
+10-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:6:5-146:19
+11        android:allowBackup="true"
+11-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:7:9-35
+12        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+12-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:8:9-77
+13        android:hardwareAccelerated="true"
+13-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:9:9-43
+14        android:largeHeap="true"
+14-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:10:9-33
+15        android:requestLegacyExternalStorage="true"
+15-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:11:9-52
+16        android:supportsRtl="true"
+16-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:12:9-35
+17        android:usesCleartextTraffic="true" >
+17-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:13:9-44
+18
+19        <!-- <activity -->
+20        <!-- android:exported="true" -->
+21        <!-- android:name="com.allreader.office.allofficefilereader.activities.ActivitySplash" -->
+22        <!-- android:hardwareAccelerated="true"> -->
+23        <!-- <intent-filter> -->
+24        <!-- <action android:name="android.intent.action.MAIN" /> -->
+25        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+26        <!-- </intent-filter> -->
+27        <!-- <intent-filter> -->
+28        <!-- <action android:name=".SplashActivity" /> -->
+29        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+30        <!-- </intent-filter> -->
+31        <!-- </activity> -->
+32
+33
+34        <!-- <activity -->
+35        <!-- android:exported="true" -->
+36        <!-- android:name="com.allreader.office.allofficefilereader.pdfViewerModule.PdfViewer" -->
+37        <!-- android:theme="@style/AppTheme.TitleBar"> -->
+38        <!-- <intent-filter> -->
+39        <!-- <action android:name="android.intent.action.VIEW" /> -->
+40
+41
+42        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+43        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+44
+45
+46        <!-- <data android:scheme="http" /> -->
+47        <!-- <data android:scheme="content" /> -->
+48        <!-- <data android:scheme="file" /> -->
+49        <!-- <data android:mimeType="application/pdf" /> -->
+50        <!-- </intent-filter> -->
+51        <!-- </activity> -->
+52        <!-- <activity -->
+53        <!-- android:name="com.allreader.office.allofficefilereader.activities.ActivityFilesHolder" -->
+54        <!-- android:hardwareAccelerated="true" /> -->
+55        <!-- <activity -->
+56        <!-- android:name="com.allreader.office.allofficefilereader.activities.MainActivity" -->
+57        <!-- android:hardwareAccelerated="true" /> -->
+58
+59        <meta-data
+59-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:54:9-56:36
+60            android:name="android.webkit.WebView.MetricsOptOut"
+60-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:55:13-64
+61            android:value="true" />
+61-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:56:13-33
+62        <meta-data
+62-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:57:9-59:37
+63            android:name="android.webkit.WebView.EnableSafeBrowsing"
+63-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:58:13-69
+64            android:value="false" />
+64-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:59:13-34
+65
+66        <!-- <provider -->
+67        <!-- android:name="androidx.core.content.FileProvider" -->
+68        <!-- android:authorities="com.allreader.office.allofficefilereader.provider" -->
+69        <!-- android:exported="false" -->
+70        <!-- android:grantUriPermissions="true"> -->
+71        <!-- <meta-data -->
+72        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+73        <!-- android:resource="@xml/provider_paths" /> -->
+74        <!-- </provider> -->
+75
+76        <receiver android:name="com.document.allreader.allofficefilereader.utils.Receiver" />
+76-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:9-94
+76-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:19-91
+77
+78        <activity
+78-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:73:9-79:45
+79            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+79-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:74:13-100
+80            android:enabled="false"
+80-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:75:13-36
+81            android:exported="false"
+81-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:76:13-37
+82            android:launchMode="singleInstance"
+82-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:77:13-48
+83            android:process=":playcore_missing_splits_activity"
+83-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:78:13-64
+84            android:stateNotNeeded="true" />
+84-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:79:13-42
+85        <activity
+85-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:80:9-84:65
+86            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+86-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:81:13-93
+87            android:exported="false"
+87-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:82:13-37
+88            android:stateNotNeeded="true"
+88-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:83:13-42
+89            android:theme="@style/Theme.PlayCore.Transparent" />
+89-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:84:13-62
+90
+91        <service
+91-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:86:9-93:19
+92            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+92-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:87:13-94
+93            android:enabled="false"
+93-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:88:13-36
+94            android:exported="true" >
+94-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:89:13-36
+95            <meta-data
+95-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:90:13-92:41
+96                android:name="com.google.android.play.core.assetpacks.versionCode"
+96-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:91:17-83
+97                android:value="11002" />
+97-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:92:17-38
+98        </service>
+99        <service
+99-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:94:9-97:40
+100            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+100-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:95:13-95
+101            android:enabled="false"
+101-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:96:13-36
+102            android:exported="false" />
+102-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:97:13-37
+103
+104        <!-- pdf_craetor -->
+105
+106        <activity
+106-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:102:9-105:59
+107            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+107-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:103:13-76
+108            android:screenOrientation="portrait"
+108-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:104:13-49
+109            android:theme="@style/Base.Theme.AppCompat" />
+109-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:105:13-56
+110        <!-- <activity android:name=".pdfcreator.activities.ActivityCropImage" /> -->
+111
+112
+113        <!-- <activity -->
+114        <!-- android:name=".pdfcreator.activities.ActivityImageEditor" -->
+115        <!-- android:screenOrientation="portrait" /> -->
+116        <!-- <activity -->
+117        <!-- android:name=".pdfcreator.activities.ActivityPreview" -->
+118        <!-- android:screenOrientation="portrait" /> -->
+119        <!-- <activity -->
+120        <!-- android:name=".pdfcreator.activities.ActivityRearrangeImages" -->
+121        <!-- android:screenOrientation="portrait" /> -->
+122        <!-- <activity -->
+123        <!-- android:name=".pdfcreator.activities.ActivityImagesPreview" -->
+124        <!-- android:screenOrientation="portrait" /> -->
+125        <!-- <activity -->
+126        <!-- android:name=".pdfcreator.activities.ActivityRearrangePdfPages" -->
+127        <!-- android:screenOrientation="portrait" /> -->
+128        <!-- <activity -->
+129        <!-- android:name=".pdfcreator.activities.ActivityFavourites" -->
+130        <!-- android:screenOrientation="portrait" /> -->
+131
+132
+133        <!-- <activity -->
+134        <!-- android:name=".pdfcreator.activities.SecondActivity" -->
+135        <!-- android:screenOrientation="portrait" /> -->
+136
+137    </application>
+138
+139</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="type_the_page_number">पेज नंबर टाइप करें</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="ok">ठीक है</string>
+    <string name="enter_page_number">कृपया पेज नंबर दर्ज करें</string>
+    <string name="done">पूर्ण</string>
+    <string name="crop">फसल</string>
+    <string name="order_by_name_az">फ़ाइल नाम से A-Z</string>
+    <string name="order_by_name_za">फ़ाइल नाम से Z-A</string>
+    <string name="restore">पुनर्स्थापित करना</string>
+    <string name="pick_image_intent_chooser_title">सोर्स चुनें</string>
+    <string name="tv_edittext1">खोज</string>
+    <string name="all">सभी</string>
+
+    <string name="fab_favourite">पसंदीदा</string>
+    <string name="fab_gotowith">पृष्ठ पर जाओ</string>
+    <string name="fab_openwith">के साथ खोलें</string>
+    <string name="fab_share">शेयर करना</string>
+    <string name="fab_snapscreen">छवि लें</string>
+    <string name="screenshot">स्क्रीनशॉट</string>
+    <string name="recent_files">हाल हीं के फाइल</string>
+
+    <string name="order_by_accessed_time">एक्सेस किए गए समय के अनुसार</string>
+    <string name="order_by_created_time">निर्मित समय के अनुसार</string>
+
+    <string name="type_your_file_name">अपनी फ़ाइल का नाम टाइप करें</string>
+
+    <string name="toast_ads">इस क्रिया में विज्ञापन हो सकते हैं</string>
+    <string name="no_files_found">कोई फाइल नहीं मिली</string>
+    <string name="Privacy_Policy"><u>गोपनीयता नीति</u></string>
+    <string name="emty_file"><u>अपना काम शुरू करने के लिए कृपया एक नई फ़ाइल जोड़ें।</u></string>
+    <string name="language">भाषा</string>
+    <string name="skip">छोड़ें</string>
+    <string name="back">पीछे</string>
+    <string name="next">अगला</string>
+    <string name="Rate">भाव</string>
+    <string name="Share">शेयर करना</string>
+    <string name="Feedback">प्रतिपुष्टि</string>
+    <string name="About">के बारे में</string>
+    <string name="All_Files">सभी फाइलें</string>
+    <string name="Files">फ़ाइलें</string>
+    <string name="IMAGE">छवि</string>
+    <string name="TEXT">मूलपाठ</string>
+    <string name="BOOKMARK">बुकमार्क</string>
+    <string name="RECENT_FILES">हाल हीं के फाइल</string>
+    <string name="ALL_FILES">सभी फाइलें</string>
+    <string name="No_File_Here">यहाँ कोई फ़ाइल नहीं है!</string>
+    <string name="get_started">शुरू हो जाओ!</string>
+    <string name="Recent">हालिया</string>
+    <string name="Bookmark">बुकमार्क</string>
+    <string name="Professional_Document_Reader">पेशेवर दस्तावेज़ पाठक</string>
+    <string name="Our_app_can_read">हमारा ऐप आपके पास मौजूद किसी भी दस्तावेज़ फ़ाइल को पढ़ सकता है।</string>
+    <string name="Manager_Document_Tools">प्रबंधक दस्तावेज़ उपकरण</string>
+    <string name="Supply_many_integrated">कई एकीकृत उपकरण प्रदान करें जो आपको इसे सरल बनाने में मदद करेंगे।</string>
+    <string name="Snap_Image_on_Document">दस्तावेज़ पर स्नैप छवि</string>
+    <string name="Easy_Snap_Image">इसे दूसरे के साथ साझा करने के लिए आसान स्नैप छवि।</string>
+    <string name="Image">छवि</string>
+    <string name="For_Android">एंड्रॉयड के लिए</string>
+    <string name="Version">संस्करण</string>
+    <string name="Your_opinion_matter_to_us">आपकी राय हमारे लिए मायने रखती है!</string>
+    <string name="If_you_enjoy">यदि आप इस ऑफिस रीडर का आनंद लेते हैं, तो क्या आप हमें Google Play पर रेटिंग देना चाहेंगे?</string>
+    <string name="Rate_us">हमें रेटिंग दें</string>
+    <string name="Not_now">अभी नहीं</string>
+    <string name="Please_send_us_some_feedback">कृपया हमें कुछ प्रतिक्रिया भेजें!</string>
+    <string name="Write_some_feedback">कुछ प्रतिक्रिया लिखें</string>
+    <string name="More_app">और ऐप</string>
+    <string name="exit">क्या आप वाकई इस ऐप को छोड़ना चाहते हैं?</string>
+    <string name="send_feedback">प्रतिक्रिया भेजें</string>
+</resources>

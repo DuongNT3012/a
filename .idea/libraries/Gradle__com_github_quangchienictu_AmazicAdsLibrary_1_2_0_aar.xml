@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.quangchienictu:AmazicAdsLibrary:1.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e5195c0af97d8ff17e2bd21fb31d5df/jetified-AmazicAdsLibrary-1.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e5195c0af97d8ff17e2bd21fb31d5df/jetified-AmazicAdsLibrary-1.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e5195c0af97d8ff17e2bd21fb31d5df/jetified-AmazicAdsLibrary-1.2.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.quangchienictu/AmazicAdsLibrary/1.2.0/22b225ffc2bfbeb3e8d86857bfcf33041663c0b1/AmazicAdsLibrary-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

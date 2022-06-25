@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="type_the_page_number">输入页码</string>
+    <string name="cancel">取消</string>
+    <string name="ok">好的</string>
+    <string name="enter_page_number">请输入页码</string>
+    <string name="done">完毕</string>
+    <string name="crop">庄稼</string>
+    <string name="order_by_name_az">按文件名 A-Z</string>
+    <string name="order_by_name_za">按文件名 Z-A</string>
+    <string name="restore">恢复</string>
+    <string name="pick_image_intent_chooser_title">选择来源</string>
+    <string name="tv_edittext1">搜索</string>
+    <string name="all">全部</string>
+
+    <string name="fab_favourite">最喜欢的</string>
+    <string name="fab_gotowith">转到页面</string>
+    <string name="fab_openwith">打开用</string>
+    <string name="fab_share">分享</string>
+    <string name="fab_snapscreen">拍照</string>
+    <string name="screenshot">截屏</string>
+    <string name="recent_files">最近的文件</string>
+
+    <string name="order_by_accessed_time">按访问时间</string>
+    <string name="order_by_created_time">按创建时间</string>
+
+    <string name="type_your_file_name">输入您的文件名</string>
+
+    <string name="toast_ads">此操作可以包含广告</string>
+    <string name="no_files_found">未找到文件</string>
+    <string name="Privacy_Policy"><u>隐私政策</u></string>
+    <string name="emty_file"><u>请添加一个新文件以开始您的工作。</u></string>
+    <string name="language">语</string>
+    <string name="skip">跳过</string>
+    <string name="back">后退</string>
+    <string name="next">下一个</string>
+    <string name="Rate">速度</string>
+    <string name="Share">分享</string>
+    <string name="Feedback">反馈</string>
+    <string name="About">关于</string>
+    <string name="All_Files">所有文件</string>
+    <string name="Files">文件</string>
+    <string name="IMAGE">图片</string>
+    <string name="TEXT">文本</string>
+    <string name="BOOKMARK">书签</string>
+    <string name="RECENT_FILES">最近的文件</string>
+    <string name="ALL_FILES">所有文件</string>
+    <string name="No_File_Here">这里没有文件！</string>
+    <string name="get_started">开始吧！</string>
+    <string name="Recent">最近的</string>
+    <string name="Bookmark">书签</string>
+    <string name="Professional_Document_Reader">专业文档阅读器</string>
+    <string name="Our_app_can_read">我们的应用程序可以读取您拥有的任何文档文件。</string>
+    <string name="Manager_Document_Tools">管理文档工具</string>
+    <string name="Supply_many_integrated">提供许多可帮助您简化操作的集成工具。</string>
+    <string name="Snap_Image_on_Document">在文档上捕捉图像</string>
+    <string name="Easy_Snap_Image">轻松捕捉图像以将其分享给其他人。</string>
+    <string name="Image">图片</string>
+    <string name="For_Android">安卓版</string>
+    <string name="Version">版本</string>
+    <string name="Your_opinion_matter_to_us">您的意见对我们很重要！</string>
+    <string name="If_you_enjoy">如果您喜欢这款 Office Reader，您介意在 Google Play 上给我们评分吗？</string>
+    <string name="Rate_us">评价我们</string>
+    <string name="Not_now">现在不要</string>
+    <string name="Please_send_us_some_feedback">请给我们一些反馈！</string>
+    <string name="Write_some_feedback">写一些反馈</string>
+    <string name="More_app">更多的应用</string>
+    <string name="exit">你确定要退出这个应用程序吗？</string>
+    <string name="send_feedback">发送反馈</string>
+</resources>
