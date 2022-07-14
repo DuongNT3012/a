@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.AllDocumentReader" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#03A9F4</item>
-        <item name="colorPrimaryVariant">#03A9F4</item>
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorPrimaryVariant">#F44336</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -30,7 +30,7 @@
 
     <style name="RadioButtonMain" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">#B6B6B6</item>
-        <item name="colorControlActivated">#1D77FF</item>
+        <item name="colorControlActivated">#F44336</item>
     </style>
 
     <style name="NavigationMenuTextStyle" parent="TextAppearance.AppCompat">

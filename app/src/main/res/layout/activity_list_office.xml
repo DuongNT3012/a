@@ -12,7 +12,7 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="#1A75FF"
+        android:background="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/relativeLayout"
-        android:background="#1A75FF"
+        android:background="#F44336"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <RelativeLayout
@@ -77,7 +77,7 @@
                 android:layout_marginStart="@dimen/_5sdp"
                 android:padding="@dimen/_8sdp"
                 android:src="@drawable/ic_search_file"
-                app:tint="#1A75FF" />
+                app:tint="#F44336" />
 
             <View
                 android:layout_width="1sp"
@@ -85,7 +85,7 @@
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/img_s_list"
                 android:alpha="0.5"
-                android:background="#1A75FF" />
+                android:background="#F44336" />
 
             <EditText
                 android:id="@+id/edtSearch"
@@ -103,7 +103,7 @@
                 android:padding="@dimen/_10sdp"
                 android:text=""
                 android:textColor="@color/black"
-                android:textColorHint="#1A75FF"
+                android:textColorHint="#F44336"
                 android:textCursorDrawable="@drawable/color_cursor"
                 android:textSize="@dimen/_10sdp" />
         </RelativeLayout>

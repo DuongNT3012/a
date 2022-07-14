@@ -206,7 +206,7 @@
             android:id="@+id/rl_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="#1A75FF"
+            android:background="#F44336"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -252,7 +252,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rl_toolbar"
-            android:background="#1A75FF"
+            android:background="#F44336"
             android:visibility="gone">
 
             <RelativeLayout
@@ -283,7 +283,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/img_s"
                     android:alpha="0.5"
-                    android:background="#1A75FF" />
+                    android:background="#F44336" />
 
                 <TextView
 
@@ -299,7 +299,7 @@
                     android:hint="@string/tv_edittext1"
                     android:padding="@dimen/_10sdp"
                     android:text=""
-                    android:textColorHint="#1A75FF"
+                    android:textColorHint="#F44336"
                     android:textSize="@dimen/_14sdp"
 
 
@@ -399,8 +399,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <RelativeLayout
-
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -408,41 +407,11 @@
                     android:paddingTop="@dimen/_20sdp">
 
                     <LinearLayout
-                        android:id="@+id/btnAll"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_110sdp"
-                        android:background="@drawable/img_all_file"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/_7sdp"
-                            android:fontFamily="@font/opensans_bold"
-                            android:text="@string/All_Files"
-                            android:textColor="@color/white"
-                            android:textSize="24sp" />
-
-                        <TextView
-                            android:id="@+id/txtNumberAll"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/opensans_medium"
-                            android:text="@string/Files"
-                            android:textColor="@color/white"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
                         android:id="@+id/ll_layout_one"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/btnAll"
-                        android:layout_marginVertical="@dimen/_15sdp"
                         android:orientation="horizontal">
-
                         <LinearLayout
                             android:id="@+id/btnWord"
                             android:layout_width="match_parent"
@@ -454,7 +423,7 @@
                             <ImageView
                                 android:layout_width="64sp"
                                 android:layout_height="64sp"
-                                android:src="@drawable/img_work_file" />
+                                android:src="@drawable/img_word_file" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -473,7 +442,6 @@
                                 android:text="Word"
                                 android:textColor="@color/black"
                                 android:textSize="10sp" />
-
                         </LinearLayout>
 
                         <LinearLayout
@@ -506,7 +474,6 @@
                                 android:text="Word"
                                 android:textColor="@color/black"
                                 android:textSize="10sp" />
-
                         </LinearLayout>
 
                         <LinearLayout
@@ -539,7 +506,6 @@
                                 android:text="Word"
                                 android:textColor="@color/black"
                                 android:textSize="10sp" />
-
                         </LinearLayout>
 
                         <LinearLayout
@@ -572,17 +538,14 @@
                                 android:text="Word"
                                 android:textColor="@color/black"
                                 android:textSize="10sp" />
-
                         </LinearLayout>
-
                     </LinearLayout>
-
 
                     <LinearLayout
                         android:id="@+id/ll_layout_two"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/ll_layout_one"
+                        android:layout_marginVertical="@dimen/_15sdp"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -714,13 +677,36 @@
                                 android:text="Word"
                                 android:textColor="@color/black"
                                 android:textSize="10sp" />
-
                         </LinearLayout>
-
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/btnAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/img_all_file"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:fontFamily="@font/opensans_bold"
+                            android:text="@string/All_Files"
+                            android:textColor="@color/white"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/txtNumberAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/opensans_medium"
+                            android:text="@string/Files"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
                 <FrameLayout
                     android:id="@+id/home_native_ads"

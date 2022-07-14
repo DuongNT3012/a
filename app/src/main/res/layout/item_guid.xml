@@ -20,7 +20,7 @@
         android:fontFamily="@font/opensans_bold"
         android:gravity="center_horizontal"
         android:text="title"
-        android:textColor="#1A75FF"
+        android:textColor="#F44336"
         android:textSize="20sp" />
 
     <TextView
