@@ -22,7 +22,6 @@ class ListFileOfficeAdapter(var mFiles: ArrayList<File>, var onItemListener: OnI
     }
 
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         /*for ( file in mFiles){
             Log.e("xxx",file.name);
@@ -34,7 +33,7 @@ class ListFileOfficeAdapter(var mFiles: ArrayList<File>, var onItemListener: OnI
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-       // if ((mFiles.size == 0&& position==0) || (mFiles.size > 0 && position == 1)) {
+        // if ((mFiles.size == 0&& position==0) || (mFiles.size > 0 && position == 1)) {
 //            val itemView = holder.itemView
 //            itemView.my_main.visibility = View.GONE
 //            itemView.my_template.visibility = View.VISIBLE
@@ -59,66 +58,84 @@ class ListFileOfficeAdapter(var mFiles: ArrayList<File>, var onItemListener: OnI
 //                .build()
 //
 //            adLoader.loadAd(AdRequest.Builder().build())
-       // } else {
-            val itemView = holder.itemView
-            itemView.my_main.visibility = View.VISIBLE
-            itemView.my_template.visibility = View.GONE
-            var pos = position
+        // } else {
+        val itemView = holder.itemView
+        itemView.my_main.visibility = View.VISIBLE
+        itemView.my_template.visibility = View.GONE
+        var pos = position
 //            if (position > 0) {
 //                pos = position - 1
 //            }
-            val file = mFiles[pos]
-            val name = file.name
-            if (name.endsWith(".pdf")) {
-                itemView.imgType.setImageResource(R.drawable.sub_pdf)
-                itemView.view_item.background.setColorFilter(Color.parseColor("#F80303"), PorterDuff.Mode.SRC_ATOP)
-            } else if (name.endsWith(".doc") || name.endsWith(".docx")) {
-                itemView.imgType.setImageResource(R.drawable.sub_doc)
-                itemView.view_item.background.setColorFilter(Color.parseColor("#2195F1"), PorterDuff.Mode.SRC_ATOP)
-            } else if (name.endsWith(".xlsx") || name.endsWith(".xls")) {
-                itemView.imgType.setImageResource(R.drawable.sub_xlsx)
-                itemView.view_item.background.setColorFilter(Color.parseColor("#02BA57"), PorterDuff.Mode.SRC_ATOP)
-            } else if (name.endsWith(".pptx") || name.endsWith(".ppt")) {
-                itemView.imgType
-                    .setImageResource(R.drawable.sub_ppt)
-                itemView.view_item.background.setColorFilter(Color.parseColor("#FD5622"), PorterDuff.Mode.SRC_ATOP)
-            } else if (name.endsWith(".png") || name.endsWith(".jpg")) {
-                itemView.imgType
-                    .setImageResource(R.drawable.sub_png)
-                itemView.view_item.background.setColorFilter(Color.parseColor("#FF9900"), PorterDuff.Mode.SRC_ATOP)
-            } else if (name.endsWith(".txt")) {
-                itemView.imgType.setImageResource(R.drawable.sub_txt)
-                itemView.view_item.background.setColorFilter(Color.parseColor("#799AB4"), PorterDuff.Mode.SRC_ATOP)
-            }
+        val file = mFiles[pos]
+        val name = file.name
+        if (name.endsWith(".pdf")) {
+            itemView.imgType.setImageResource(R.drawable.sub_pdf)
+            itemView.view_item.background.setColorFilter(
+                Color.parseColor("#FF000B"),
+                PorterDuff.Mode.SRC_ATOP
+            )
+        } else if (name.endsWith(".doc") || name.endsWith(".docx")) {
+            itemView.imgType.setImageResource(R.drawable.sub_doc)
+            itemView.view_item.background.setColorFilter(
+                Color.parseColor("#0059D3"),
+                PorterDuff.Mode.SRC_ATOP
+            )
+        } else if (name.endsWith(".xlsx") || name.endsWith(".xls")) {
+            itemView.imgType.setImageResource(R.drawable.sub_xlsx)
+            itemView.view_item.background.setColorFilter(
+                Color.parseColor("#08A747"),
+                PorterDuff.Mode.SRC_ATOP
+            )
+        } else if (name.endsWith(".pptx") || name.endsWith(".ppt")) {
+            itemView.imgType
+                .setImageResource(R.drawable.sub_ppt)
+            itemView.view_item.background.setColorFilter(
+                Color.parseColor("#DD7719"),
+                PorterDuff.Mode.SRC_ATOP
+            )
+        } else if (name.endsWith(".png") || name.endsWith(".jpg")) {
+            itemView.imgType
+                .setImageResource(R.drawable.sub_png)
+            itemView.view_item.background.setColorFilter(
+                Color.parseColor("#FF9900"),
+                PorterDuff.Mode.SRC_ATOP
+            )
+        } else if (name.endsWith(".txt")) {
+            itemView.imgType.setImageResource(R.drawable.sub_txt)
+            itemView.view_item.background.setColorFilter(
+                Color.parseColor("#4D8CBD"),
+                PorterDuff.Mode.SRC_ATOP
+            )
+        }
 
-            itemView.tvName.text = name
-            val time = file.lastModified()
-            itemView.tvTime.text =
-                android.text.format.DateFormat.format("yyyy-MM-dd hh:mm:ss a", Date(time))
-            var isFavorite = Utils.isFileFavorite(file.absolutePath, itemView.context)
+        itemView.tvName.text = name
+        val time = file.lastModified()
+        itemView.tvTime.text =
+            android.text.format.DateFormat.format("yyyy-MM-dd hh:mm:ss a", Date(time))
+        var isFavorite = Utils.isFileFavorite(file.absolutePath, itemView.context)
+        if (isFavorite) {
+            itemView.imgFavorite.setImageResource(R.drawable.ic_select_book_mark)
+
+        } else {
+            itemView.imgFavorite.setImageResource(R.drawable.ic_unselect_book_mark)
+        }
+
+        itemView.imgFavorite.setOnClickListener {
             if (isFavorite) {
-                itemView.imgFavorite.setImageResource(R.drawable.ic_select_book_mark)
-
-            } else {
+                isFavorite = false
                 itemView.imgFavorite.setImageResource(R.drawable.ic_unselect_book_mark)
+            } else {
+                isFavorite = true
+                itemView.imgFavorite.setImageResource(R.drawable.ic_select_book_mark)
             }
+            Utils.setFileFavorite(file.absolutePath, itemView.context, isFavorite)
+        }
 
-            itemView.imgFavorite.setOnClickListener {
-                if (isFavorite) {
-                    isFavorite = false
-                    itemView.imgFavorite.setImageResource(R.drawable.ic_unselect_book_mark)
-                } else {
-                    isFavorite = true
-                    itemView.imgFavorite.setImageResource(R.drawable.ic_select_book_mark)
-                }
-                Utils.setFileFavorite(file.absolutePath, itemView.context, isFavorite)
-            }
+        itemView.setOnClickListener {
+            onItemListener.onItemClick(name, file.absolutePath)
 
-            itemView.setOnClickListener {
-                onItemListener.onItemClick(name, file.absolutePath)
-
-            }
-     //   }
+        }
+        //   }
     }
 
     override fun getItemCount(): Int {

@@ -6,9 +6,11 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.PorterDuff
 import android.graphics.drawable.ColorDrawable
 import android.graphics.pdf.PdfDocument
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
@@ -43,6 +45,21 @@ class ShotViewerScrenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = window
+            if (window != null) {
+                var background =
+                    resources.getDrawable(R.drawable.bg_gradient_toolbar)
+                //bg_gradient is your gradient.
+                background.setColorFilter(
+                    android.graphics.Color.parseColor("#FF9900"),
+                    PorterDuff.Mode.SRC_ATOP
+                )
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = Color.parseColor("#FF9900")
+                window.setBackgroundDrawable(background)
+            }
+        }
         setContentView(R.layout.activity_screen_viewer)
         initData()
         handleEvents()
@@ -230,77 +247,77 @@ class ShotViewerScrenActivity : AppCompatActivity() {
 
     private fun setColorToolbar() {
         if (filename.endsWith(".doc")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....doc")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".ppt")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....ppt")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".txt")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#576D7E")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....txt")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".xls")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....xls")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".xml")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....xml")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".docx")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....docx")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".png")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....png")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".html")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....html")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".pptx")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FD5622")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....pptx")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else if (filename.endsWith(".xlsx")) {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#4BAE4F")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....xlsx")
             } else {
                 tv_title_screenshot.setText(filename)
             }
         } else {
-            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            toolbar_screenshot.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 20) {
                 tv_title_screenshot.setText(filename.substring(0, 20) + "....")
             } else {

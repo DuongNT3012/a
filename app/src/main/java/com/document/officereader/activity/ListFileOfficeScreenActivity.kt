@@ -76,7 +76,8 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
         handleEvents()
         //ads
         loadAdsInter()
-        Admod.getInstance().loadBanner(this@ListFileOfficeScreenActivity,getString(R.string.banner_all));
+        Admod.getInstance()
+            .loadBanner(this@ListFileOfficeScreenActivity, getString(R.string.banner_all));
     }
 
     override fun onItemClick(name: String, url: String) {
@@ -117,11 +118,11 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
         mFiles.addAll(getListFileByType())
         mFileTemps.addAll(mFiles)
 
-        if(mFiles.isEmpty()){
+        if (mFiles.isEmpty()) {
             mFiles.clear()
             mListFileOfficeAdapter = ListFileOfficeAdapter(mFiles, this)
             ll_empty.visibility = View.VISIBLE
-        }else{
+        } else {
             mListFileOfficeAdapter = ListFileOfficeAdapter(mFiles, this)
             rvListFile.adapter = mListFileOfficeAdapter
             ll_empty.visibility = View.GONE
@@ -147,13 +148,12 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
     }
 
 
-
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     private fun handleEvents() {
         btnRefresh.setOnClickListener {
-            val currentTime = System.currentTimeMillis()/1000
+            val currentTime = System.currentTimeMillis() / 1000
             val dTime = currentTime - mTimeClick
-            if(mIsLoadFinish && dTime>=2) {
+            if (mIsLoadFinish && dTime >= 2) {
                 mTimeClick = currentTime.toInt()
                 refreshFile()
             }
@@ -166,28 +166,30 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
 //            intent.putExtra(Constants.TYPE, mType)
 //            startActivity(intent)
 //        }
-        edtSearch.addTextChangedListener(object: TextWatcher {
+        edtSearch.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 mFiles.clear()
-                if(TextUtils.isEmpty(p0.toString().trim())) {
+                if (TextUtils.isEmpty(p0.toString().trim())) {
 
                     mFiles.addAll(mFileTemps)
-                }else{
+                } else {
 
-                    mFiles.addAll(mFileTemps.filter { file-> file.name.toLowerCase().indexOf(p0.toString().toLowerCase())!=-1 })
+                    mFiles.addAll(mFileTemps.filter { file ->
+                        file.name.toLowerCase().indexOf(p0.toString().toLowerCase()) != -1
+                    })
                 }
 
-                if(mFiles.isEmpty()){
+                if (mFiles.isEmpty()) {
                     ll_empty_seach.visibility = View.VISIBLE
                     ll_empty.visibility = View.GONE
                     mFiles.clear()
                     mListFileOfficeAdapter.notifyDataSetChanged()
                     rvListFile.adapter = mListFileOfficeAdapter
-                }else{
+                } else {
                     ll_empty_seach.visibility = View.GONE
                     ll_empty.visibility = View.GONE
                 }
@@ -243,8 +245,8 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
     }
 
 
-inner class LoadAllFile :
-            AsyncTask<Void?, Void?, Void?>() {
+    inner class LoadAllFile :
+        AsyncTask<Void?, Void?, Void?>() {
         override fun doInBackground(vararg p0: Void?): Void? {
             getAllFile(File(Environment.getExternalStorageDirectory().toString()))
             return null
@@ -260,6 +262,7 @@ inner class LoadAllFile :
             mIsLoadFinish = true
             mListFileOfficeAdapter.notifyDataSetChanged()
         }
+
         private fun getAllFile(dir: File) {
             val listFile = dir.listFiles()
             if (listFile != null && listFile.size > 0) {
@@ -395,7 +398,7 @@ inner class LoadAllFile :
                 // to the app after tapping on an ad.
             }
         }*/
-      //  gotoNextScreen()
+        //  gotoNextScreen()
     }
 
     private fun showAds() {
@@ -403,18 +406,21 @@ inner class LoadAllFile :
 
 
         Admod.getInstance()
-            .showInterAds(this@ListFileOfficeScreenActivity, mInterstitialAd, object : InterCallback() {
-                override fun onAdClosed() {
-                    gotoNextScreen()
-                    mInterstitialAd = null
-                    loadAdsInter()
+            .showInterAds(
+                this@ListFileOfficeScreenActivity,
+                mInterstitialAd,
+                object : InterCallback() {
+                    override fun onAdClosed() {
+                        gotoNextScreen()
+                        mInterstitialAd = null
+                        loadAdsInter()
 
-                }
+                    }
 
-                override fun onAdFailedToLoad(i: LoadAdError) {
-                    onAdClosed()
-                }
-            })
+                    override fun onAdFailedToLoad(i: LoadAdError) {
+                        onAdClosed()
+                    }
+                })
 
     }
 
@@ -442,24 +448,30 @@ inner class LoadAllFile :
             super.onPostExecute(result)
             mListFileOfficeAdapter.notifyDataSetChanged()
         }
+
         override fun doInBackground(vararg p0: Void): Void? {
             try {
 
-                when(mTypeSort) {
-                    0 ->{
+                when (mTypeSort) {
+                    0 -> {
                         mFiles.sortBy { it.name.toLowerCase() }
                     }
-                    1->{
+                    1 -> {
                         mFiles.sortByDescending { it.name.toLowerCase() }
                     }
-                    2->{
+                    2 -> {
                         mFiles.sortBy { it.lastModified() * -1 }
                     }
-                    3->{
-                        mFiles.sortBy { Utils.getAccessTimeFile(it.absolutePath, applicationContext) }
+                    3 -> {
+                        mFiles.sortBy {
+                            Utils.getAccessTimeFile(
+                                it.absolutePath,
+                                applicationContext
+                            )
+                        }
                     }
                 }
-            }catch (e: Exception) {
+            } catch (e: Exception) {
                 e.printStackTrace()
             }
             return null

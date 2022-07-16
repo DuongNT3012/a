@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Build
@@ -52,6 +53,21 @@ class ScreenShotScreenActivity : AppCompatActivity(), CropImageView.OnSetImageUr
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window = window
+            if (window != null) {
+                var background =
+                    resources.getDrawable(R.drawable.bg_gradient_toolbar)
+                //bg_gradient is your gradient.
+                background.setColorFilter(
+                    android.graphics.Color.parseColor("#FF9900"),
+                    PorterDuff.Mode.SRC_ATOP
+                )
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = Color.parseColor("#FF9900")
+                window.setBackgroundDrawable(background)
+            }
+        }
         setContentView(R.layout.activity_screenshot)
         initData()
         showCropMode(null)
@@ -216,84 +232,84 @@ class ScreenShotScreenActivity : AppCompatActivity(), CropImageView.OnSetImageUr
         var file = File(intent.getStringExtra("pathtitle").toString())
         var filename = file.name
         if (filename.endsWith(".doc")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....doc")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".ppt")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....ppt")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".txt")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#576D7E")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....txt")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".xls")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....xls")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".xml")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....xml")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".docx")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....docx")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".png")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....png")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".html")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....html")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".pptx")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#FD5622")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....pptx")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".xlsx")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#4BAE4F")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....xlsx")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else if (filename.endsWith(".pdf")) {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#F80303")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....pdf")
             } else {
                 tv_title_crop.setText(filename)
             }
         } else {
-            layout_top.setBackground(ColorDrawable(Color.parseColor("#2195F1")))
+            layout_top.setBackground(ColorDrawable(Color.parseColor("#FF9900")))
             if (filename.length > 15) {
                 tv_title_crop.setText(filename.substring(0, 15) + "....")
             } else {
@@ -313,9 +329,9 @@ class ScreenShotScreenActivity : AppCompatActivity(), CropImageView.OnSetImageUr
     }
 
     private fun showDraw() {
-        img_draw_tab.setColorFilter(Color.parseColor("#2195F1"))
+        img_draw_tab.setColorFilter(Color.parseColor("#F44336"))
         img_crop_tab.setColorFilter(Color.parseColor("#D3D3D3"))
-        tv_draw_tab.setTextColor(Color.parseColor("#2195F1"))
+        tv_draw_tab.setTextColor(Color.parseColor("#F44336"))
         tv_crop_tab.setTextColor(Color.parseColor("#D3D3D3"))
         ll_crop.visibility = View.GONE
         ll_draw.visibility = View.VISIBLE

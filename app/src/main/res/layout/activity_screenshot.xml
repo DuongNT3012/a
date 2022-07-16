@@ -10,7 +10,7 @@
         android:id="@+id/layout_top"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#2195F1"
+        android:background="#FF9900"
         android:padding="5dp">
 
         <ImageView
@@ -36,15 +36,16 @@
 
         <TextView
             android:id="@+id/tvDone"
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/bg_done"
+            android:background="@drawable/bg_done_screenshot_act"
             android:fontFamily="@font/opensans_bold"
             android:gravity="center"
             android:text="@string/done"
-            android:textColor="#ffffff"
+            android:textColor="#FF9900"
             android:textSize="13sp" />
 
 
@@ -81,18 +82,12 @@
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:background="@drawable/bg_crop_one">
+            android:layout_marginBottom="@dimen/_10sdp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"
-                android:layout_margin="@dimen/_10sdp"
-                android:layout_marginStart="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:layout_marginEnd="@dimen/_20sdp"
-                android:layout_marginBottom="@dimen/_20sdp"
                 android:background="@drawable/bg_crop_two"
                 android:padding="@dimen/_10sdp">
 
@@ -240,7 +235,7 @@
                     android:layout_centerHorizontal="true"
                     android:fontFamily="@font/inter_medium"
                     android:text="Crop"
-                    android:textColor="#2195F1"
+                    android:textColor="#F44336"
                     android:textSize="10sp"
                     android:textStyle="bold" />
 
@@ -307,7 +302,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_medium"
                     android:text="Restore"
-                    android:textColor="#2195F1"
+                    android:textColor="#F44336"
                     android:textSize="10sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -331,7 +326,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_medium"
                     android:text="Crop"
-                    android:textColor="#2195F1"
+                    android:textColor="#F44336"
                     android:textSize="10sp"
                     android:textStyle="normal" />
             </LinearLayout>
@@ -354,7 +349,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_medium"
                     android:text="Share"
-                    android:textColor="#2195F1"
+                    android:textColor="#F44336"
                     android:textSize="10sp"
                     android:textStyle="normal" />
             </LinearLayout>

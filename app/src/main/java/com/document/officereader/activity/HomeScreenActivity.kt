@@ -533,7 +533,7 @@ class HomeScreenActivity : AppCompatActivity() {
                 startActivity(
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("https://play.google.com/store/apps/developer?id=TVApp")
+                        Uri.parse("https://play.google.com/store/apps/developer?id=NTDApp")
                     )
                 )
             } catch (e: ActivityNotFoundException) {
@@ -574,7 +574,7 @@ class HomeScreenActivity : AppCompatActivity() {
     }
 
     private fun showDialogRate(isExit: Boolean) {
-        home_native_ads.visibility = View.GONE
+        //home_native_ads.visibility = View.GONE
         val dialog = Dialog(this@HomeScreenActivity)
         val view: View = LayoutInflater.from(this).inflate(R.layout.dialog_rate, null, false)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -639,7 +639,7 @@ class HomeScreenActivity : AppCompatActivity() {
                 SharePrefUtils.forceRated(this@HomeScreenActivity)
                 val uriText =
                     """
-                    mailto:anhnt.vtd@gmail.com?subject=Feedback OfficeReader &body=Rate : ${rtb.rating}
+                    mailto:nguyenduong30121999@gmail.com?subject=Feedback OfficeReader &body=Rate : ${rtb.rating}
                     Content: 
                     """.trimIndent()
                 val uri = Uri.parse(uriText)
@@ -691,7 +691,7 @@ class HomeScreenActivity : AppCompatActivity() {
     }
 
     fun showFeedback() {
-        home_native_ads.visibility = View.GONE
+        //home_native_ads.visibility = View.GONE
         val dialog = Dialog(this@HomeScreenActivity)
         val view = LayoutInflater.from(this).inflate(R.layout.dialog_feedback, null, false)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -717,7 +717,7 @@ class HomeScreenActivity : AppCompatActivity() {
                 .disableAppResumeWithActivity(HomeScreenActivity::class.java)
             val uriText =
                 """
-                    mailto:anhnt.vtd@gmail.com?subject=Feedback OfficeReader &body=Content : ${content.text}
+                    mailto:nguyenduong30121999@gmail.com?subject=Feedback OfficeReader &body=Content : ${content.text}
                     """.trimIndent()
             val uri = Uri.parse(uriText)
             val sendIntent = Intent(Intent.ACTION_SENDTO)
@@ -729,7 +729,7 @@ class HomeScreenActivity : AppCompatActivity() {
     }
 
     fun showDialogExit() {
-        home_native_ads.visibility = View.GONE
+        //home_native_ads.visibility = View.GONE
         val dialog = Dialog(this@HomeScreenActivity)
         val view = LayoutInflater.from(this).inflate(R.layout.dialog_exit, null, false)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)

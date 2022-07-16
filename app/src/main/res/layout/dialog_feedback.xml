@@ -36,11 +36,10 @@
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/bg_edit_comment"
         android:fontFamily="@font/roboto_light"
-        android:gravity="start"
+        android:gravity="center_vertical"
         android:hint="@string/Write_some_feedback"
         android:minLines="5"
         android:paddingHorizontal="20dp"
-        android:textColorHint="@color/blue_font"
         android:textFontWeight="100"
         android:textStyle="normal" />
 

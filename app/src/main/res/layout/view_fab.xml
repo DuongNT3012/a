@@ -35,8 +35,8 @@
 
             <ImageView
                 android:id="@+id/fab_gotopage"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:padding="@dimen/_5sdp"
                 android:src="@drawable/option_page" />
 
@@ -54,7 +54,6 @@
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="@dimen/_1sdp"
                 android:layout_below="@+id/fab_gotopage"
-                android:layout_marginTop="-8dp"
                 android:background="#DDE2E5" />
 
 
@@ -76,8 +75,8 @@
 
             <ImageView
                 android:id="@+id/fab_share"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:padding="@dimen/_5sdp"
                 android:src="@drawable/option_share" />
 
@@ -96,7 +95,6 @@
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="@dimen/_1sdp"
                 android:layout_below="@+id/fab_share"
-                android:layout_marginTop="-8dp"
                 android:background="#DDE2E5" />
 
 
@@ -118,11 +116,10 @@
 
             <ImageView
                 android:id="@+id/fab_snapscreen"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:padding="@dimen/_5sdp"
                 android:src="@drawable/option_take_image" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -139,7 +136,6 @@
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="@dimen/_1sdp"
                 android:layout_below="@+id/fab_snapscreen"
-                android:layout_marginTop="-8dp"
                 android:background="#DDE2E5" />
 
 
@@ -158,8 +154,8 @@
 
             <ImageView
                 android:id="@+id/fab_favourite"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:padding="@dimen/_5sdp"
                 android:src="@drawable/option_bookmark" />
 
@@ -170,8 +166,6 @@
                 android:text="@string/Bookmark"
                 android:textColor="#818181"
                 android:textSize="16sp" />
-
-
         </LinearLayout>
     </LinearLayout>
 
@@ -223,17 +217,14 @@
             app:maxImageSize="16dp" />
     </LinearLayout>
 
-
     <ImageView
         android:id="@+id/fab"
-        android:layout_width="@dimen/_80sdp"
-        android:layout_height="@dimen/_80sdp"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
         android:padding="@dimen/_5sdp"
         android:src="@drawable/option_work_space" />
-
 </RelativeLayout>

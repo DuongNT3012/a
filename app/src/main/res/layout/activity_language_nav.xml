@@ -16,7 +16,7 @@
             android:id="@+id/toolbar_language"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="#1D77FF"
+            android:background="#F44336"
             android:minHeight="?attr/actionBarSize">
 
             <ImageView
@@ -65,8 +65,10 @@
                     android:id="@+id/rcl_language"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="@dimen/_10sdp"
-                    android:background="@drawable/border_item_language"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
                     android:orientation="vertical"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
             </RelativeLayout>

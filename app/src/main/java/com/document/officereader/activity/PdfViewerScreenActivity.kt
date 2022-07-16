@@ -2,6 +2,7 @@ package com.document.officereader.activity
 
 import android.app.Dialog
 import android.content.Intent
+import android.graphics.Color
 import android.graphics.PorterDuff
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
@@ -41,11 +42,11 @@ class PdfViewerScreenActivity : AppCompatActivity() {
                     resources.getDrawable(R.drawable.bg_gradient_toolbar)
                 //bg_gradient is your gradient.
                 background.setColorFilter(
-                    android.graphics.Color.parseColor("#B60000"),
+                    android.graphics.Color.parseColor("#FF000B"),
                     PorterDuff.Mode.SRC_ATOP
                 )
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-                window.statusBarColor = resources.getColor(android.R.color.transparent)
+                window.statusBarColor = Color.parseColor("#FF000B")
                 window.setBackgroundDrawable(background)
             }
         }
@@ -54,14 +55,16 @@ class PdfViewerScreenActivity : AppCompatActivity() {
         initData()
         handleEvents()
         //ads
-        Admod.getInstance().loadBanner(this@PdfViewerScreenActivity,getString(R.string.banner_all));
+        Admod.getInstance()
+            .loadBanner(this@PdfViewerScreenActivity, getString(R.string.banner_all));
         fromSplash = intent.getBooleanExtra("fromSplash", false)
     }
 
     override fun onResume() {
         super.onResume()
         fab.visibility = View.VISIBLE
-        AppOpenManager.getInstance().enableAppResumeWithActivity(PdfViewerScreenActivity::class.java)
+        AppOpenManager.getInstance()
+            .enableAppResumeWithActivity(PdfViewerScreenActivity::class.java)
     }
 
     private fun initData() {
@@ -78,7 +81,7 @@ class PdfViewerScreenActivity : AppCompatActivity() {
             .spacing(0)
             .onPageChange(object : OnPageChangeListener {
                 override fun onPageChanged(page: Int, pageCount: Int) {
-                    number_pages.setText("Page "+(page + 1).toString() + " of " + pageCount.toString())
+                    number_pages.setText("Page " + (page + 1).toString() + " of " + pageCount.toString())
 
                 }
             })
@@ -159,11 +162,11 @@ class PdfViewerScreenActivity : AppCompatActivity() {
                             .enableAnnotationRendering(true)
                             .scrollHandle(DefaultScrollHandle(this))
                             .onPageChange(object : OnPageChangeListener {
-                            override fun onPageChanged(page: Int, pageCount: Int) {
-                                number_pages.setText("Page "+(page + 1).toString() + " of " + pageCount.toString())
+                                override fun onPageChanged(page: Int, pageCount: Int) {
+                                    number_pages.setText("Page " + (page + 1).toString() + " of " + pageCount.toString())
 
-                            }
-                        })
+                                }
+                            })
                             .load()
                     } catch (e: Exception) {
                         e.printStackTrace()
@@ -177,7 +180,8 @@ class PdfViewerScreenActivity : AppCompatActivity() {
         }
 
         layout_fab_share.setOnClickListener {
-            AppOpenManager.getInstance().disableAppResumeWithActivity(PdfViewerScreenActivity::class.java)
+            AppOpenManager.getInstance()
+                .disableAppResumeWithActivity(PdfViewerScreenActivity::class.java)
             val fileUri = FileProvider.getUriForFile(
                 this,
                 BuildConfig.APPLICATION_ID + ".provider",

@@ -667,12 +667,12 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
 
     private void setColorToolbar() {
         if (filename.endsWith(".doc") || filename.endsWith(".docm") || filename.endsWith(".dot") || filename.endsWith(".dotx")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#2195F1")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#0059D3")));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 final Window window = getWindow();
                 if (window != null) {
                     Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
-                    background.setColorFilter(Color.parseColor("#1472BC"), PorterDuff.Mode.SRC_ATOP);
+                    background.setColorFilter(Color.parseColor("#0059D3"), PorterDuff.Mode.SRC_ATOP);
                     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
                     window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
                     window.setBackgroundDrawable(background);
@@ -684,7 +684,17 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
                 tv_work.setText(filename);
             }
         } else if (filename.endsWith(".ppt")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#2195F1")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#DD7719")));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                final Window window = getWindow();
+                if (window != null) {
+                    Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
+                    background.setColorFilter(Color.parseColor("#DD7719"), PorterDuff.Mode.SRC_ATOP);
+                    window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                    window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
+                    window.setBackgroundDrawable(background);
+                }
+            }
             if (filename.length() > 20) {
                 tv_work.setText(filename.substring(0, 20) + "....ppt");
             } else {
@@ -692,12 +702,12 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".txt")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#576D7E")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#4D8CBD")));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 final Window window = getWindow();
                 if (window != null) {
                     Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
-                    background.setColorFilter(Color.parseColor("#3A4955"), PorterDuff.Mode.SRC_ATOP);
+                    background.setColorFilter(Color.parseColor("#4D8CBD"), PorterDuff.Mode.SRC_ATOP);
                     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
                     window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
                     window.setBackgroundDrawable(background);
@@ -710,12 +720,12 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".xls") || filename.endsWith(".xlsm")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#4BAE4F")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#08A747")));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 final Window window = getWindow();
                 if (window != null) {
                     Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
-                    background.setColorFilter(Color.parseColor("#2C6C2E"), PorterDuff.Mode.SRC_ATOP);
+                    background.setColorFilter(Color.parseColor("#08A747"), PorterDuff.Mode.SRC_ATOP);
                     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
                     window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
                     window.setBackgroundDrawable(background);
@@ -728,7 +738,17 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".xml")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#2195F1")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#FF000B")));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                final Window window = getWindow();
+                if (window != null) {
+                    Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
+                    background.setColorFilter(Color.parseColor("#FF000B"), PorterDuff.Mode.SRC_ATOP);
+                    window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                    window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
+                    window.setBackgroundDrawable(background);
+                }
+            }
             if (filename.length() > 20) {
                 tv_work.setText(filename.substring(0, 20) + "....xml");
             } else {
@@ -736,7 +756,17 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".docx")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#2195F1")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#0059D3")));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                final Window window = getWindow();
+                if (window != null) {
+                    Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
+                    background.setColorFilter(Color.parseColor("#0059D3"), PorterDuff.Mode.SRC_ATOP);
+                    window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                    window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
+                    window.setBackgroundDrawable(background);
+                }
+            }
             if (filename.length() > 20) {
                 tv_work.setText(filename.substring(0, 20) + "....docx");
             } else {
@@ -744,12 +774,12 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".png") || filename.endsWith(".jpg") || filename.endsWith(".svg") || filename.endsWith(".gpeg") || filename.endsWith(".tiff")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#2195F1")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#FF9900")));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 final Window window = getWindow();
                 if (window != null) {
                     Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
-                    background.setColorFilter(Color.parseColor("#DF8601"), PorterDuff.Mode.SRC_ATOP);
+                    background.setColorFilter(Color.parseColor("#FF9900"), PorterDuff.Mode.SRC_ATOP);
                     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
                     window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
                     window.setBackgroundDrawable(background);
@@ -762,7 +792,17 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".html")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#2195F1")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#FF000B")));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                final Window window = getWindow();
+                if (window != null) {
+                    Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
+                    background.setColorFilter(Color.parseColor("#FF000B"), PorterDuff.Mode.SRC_ATOP);
+                    window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                    window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
+                    window.setBackgroundDrawable(background);
+                }
+            }
             if (filename.length() > 20) {
                 tv_work.setText(filename.substring(0, 20) + "....html");
             } else {
@@ -770,12 +810,12 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".pptx")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#FD5622")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#DD7719")));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 final Window window = getWindow();
                 if (window != null) {
                     Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
-                    background.setColorFilter(Color.parseColor("#BB421F"), PorterDuff.Mode.SRC_ATOP);
+                    background.setColorFilter(Color.parseColor("#DD7719"), PorterDuff.Mode.SRC_ATOP);
                     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
                     window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
                     window.setBackgroundDrawable(background);
@@ -788,12 +828,12 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else if (filename.endsWith(".xlsx")) {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#4BAE4F")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#08A747")));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 final Window window = getWindow();
                 if (window != null) {
                     Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
-                    background.setColorFilter(Color.parseColor("#2C6C2E"), PorterDuff.Mode.SRC_ATOP);
+                    background.setColorFilter(Color.parseColor("#08A747"), PorterDuff.Mode.SRC_ATOP);
                     window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
                     window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
                     window.setBackgroundDrawable(background);
@@ -806,7 +846,17 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
             }
 
         } else {
-            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#2195F1")));
+            toolbar_view.setBackground(new ColorDrawable(Color.parseColor("#FF000B")));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                final Window window = getWindow();
+                if (window != null) {
+                    Drawable background = getResources().getDrawable(com.document.officereader.R.drawable.bg_gradient_toolbar); //bg_gradient is your gradient.
+                    background.setColorFilter(Color.parseColor("#FF000B"), PorterDuff.Mode.SRC_ATOP);
+                    window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                    window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
+                    window.setBackgroundDrawable(background);
+                }
+            }
             if (filename.length() > 20) {
                 tv_work.setText(filename.substring(0, 20) + "....");
             } else {

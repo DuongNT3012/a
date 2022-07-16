@@ -1,6 +1,7 @@
 <com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
+
     <RelativeLayout
         android:id="@+id/ad_unit_content"
         android:layout_width="fill_parent"
@@ -37,10 +38,10 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:maxLines="2"
-                        android:textStyle="bold"
                         android:text="hellop .this ius dsa dsadsa "
                         android:textColor="@android:color/black"
-                        android:textSize="15dp" />
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -71,33 +72,33 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dip"
                 android:layout_marginRight="10dip"
-                android:textColor="#CC000000"
                 android:maxLines="3"
                 android:text="@string/appbar_scrolling_view_behavior"
+                android:textColor="#CC000000"
                 android:textSize="15sp" />
 
             <com.google.android.gms.ads.nativead.MediaView
-                android:layout_marginTop="5dp"
                 android:id="@+id/ad_media"
                 android:layout_width="fill_parent"
-                android:visibility="visible"
                 android:layout_height="150dp"
-                android:minHeight="120dp"
-                android:minWidth="120dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/_5sdp"
                 android:layout_weight="1"
-                android:layout_marginBottom="@dimen/_5sdp"/>
+                android:minWidth="120dp"
+                android:minHeight="120dp"
+                android:visibility="visible" />
 
 
             <Button
                 android:id="@+id/ad_call_to_action"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_install"
-                android:gravity="center"
-                android:layout_marginBottom="5dp"
                 android:layout_marginStart="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_install"
+                android:gravity="center"
                 android:text="Cài Đặt"
                 android:textColor="@color/white"
                 android:textSize="22sp"

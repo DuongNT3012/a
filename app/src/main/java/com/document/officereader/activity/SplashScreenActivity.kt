@@ -138,7 +138,9 @@ class SplashScreenActivity : AppCompatActivity() {
                             }
                         })
             } else {
-                loadAds()
+                Handler().postDelayed(Runnable {
+                    loadAds()
+                }, 2000)
             }
         }
 
