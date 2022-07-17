@@ -56,8 +56,7 @@ class PdfViewerScreenActivity : AppCompatActivity() {
         initData()
         handleEvents()
         //ads
-        Admod.getInstance()
-            .loadBanner(this@PdfViewerScreenActivity, getString(R.string.banner_all));
+        //Admod.getInstance().loadBanner(this@PdfViewerScreenActivity, getString(R.string.banner_all));
         fromSplash = intent.getBooleanExtra("fromSplash", false)
     }
 

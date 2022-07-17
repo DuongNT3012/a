@@ -4,7 +4,7 @@ ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidMani
 INJECTED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:2:1-148:12
 INJECTED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:2:1-148:12
 	package
-		ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:4:5-57
+		ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:4:5-55
 		INJECTED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml
 	xmlns:tools
@@ -39,10 +39,10 @@ ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidMani
 		ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:59:13-34
 	android:name
 		ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:58:13-69
-receiver#com.document.allreader.allofficefilereader.utils.Receiver
-ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:9-94
+receiver#com.office.allreader.allofficefilereader.utils.Receiver
+ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:9-92
 	android:name
-		ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:19-91
+		ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:19-89
 activity#com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity
 ADDED from C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:73:9-79:45
 	android:process

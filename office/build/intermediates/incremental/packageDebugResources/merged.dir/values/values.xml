@@ -287,7 +287,6 @@
     <string name="excel_to_pdf">Excel to PDF</string>
     <string name="excel_tv_view_text">Excel file selected: </string>
     <string name="executive" translatable="false">EXECUTIVE</string>
-    <string name="exit">Are you sure to quit this app ?</string>
     <string name="extension_not_supported">Sorry! This file type is not supported currently.</string>
     <string name="external_storage_permission">External Storage Permission</string>
     <string name="extract_images">Extract Images</string>

@@ -755,7 +755,7 @@
                     android:layout_marginVertical="@dimen/_15sdp"
                     android:background="#E3E2E2"
                     android:paddingBottom="@dimen/_10sdp"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 

@@ -219,7 +219,6 @@ string excel_selected
 string excel_to_pdf
 string excel_tv_view_text
 string executive
-string exit
 string extension_not_supported
 string external_storage_permission
 string extract_images

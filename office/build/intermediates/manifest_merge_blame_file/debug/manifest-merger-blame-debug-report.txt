@@ -1,7 +1,7 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    xmlns:tools="http://schemas.android.com/tools"
-4    package="com.document.allreader.allofficefilereader" >
+4    package="com.office.allreader.allofficefilereader" >
 5
 6    <uses-sdk
 7        android:minSdkVersion="21"
@@ -89,9 +89,9 @@
 73        <!-- android:resource="@xml/provider_paths" /> -->
 74        <!-- </provider> -->
 75
-76        <receiver android:name="com.document.allreader.allofficefilereader.utils.Receiver" />
-76-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:9-94
-76-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:19-91
+76        <receiver android:name="com.office.allreader.allofficefilereader.utils.Receiver" />
+76-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:9-92
+76-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:71:19-89
 77
 78        <activity
 78-->C:\Users\Admin\Desktop\OfficeReaderReskin\office\src\main\AndroidManifest.xml:73:9-79:45

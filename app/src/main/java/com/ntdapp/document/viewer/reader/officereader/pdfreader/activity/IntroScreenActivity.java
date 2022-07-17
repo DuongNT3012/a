@@ -138,8 +138,8 @@ public class IntroScreenActivity extends AppCompatActivity {
                         tv_next.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                //gotoNextScreen();
-                                Admod.getInstance().showInterAds(IntroScreenActivity.this, mInterstitialAd, new InterCallback() {
+                                gotoNextScreen();
+                                /*Admod.getInstance().showInterAds(IntroScreenActivity.this, mInterstitialAd, new InterCallback() {
                                     @Override
                                     public void onAdClosed() {
                                         gotoNextScreen();
@@ -150,7 +150,7 @@ public class IntroScreenActivity extends AppCompatActivity {
                                         gotoNextScreen();
                                     }
 
-                                });
+                                });*/
                             }
                         });
                         tv_skip.setVisibility(View.INVISIBLE);
@@ -161,9 +161,9 @@ public class IntroScreenActivity extends AppCompatActivity {
         tv_skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //gotoNextScreen();
+                gotoNextScreen();
 
-                Admod.getInstance().showInterAds(IntroScreenActivity.this, mInterstitialAd, new InterCallback() {
+                /*Admod.getInstance().showInterAds(IntroScreenActivity.this, mInterstitialAd, new InterCallback() {
                     @Override
                     public void onAdClosed() {
                         gotoNextScreen();
@@ -174,10 +174,10 @@ public class IntroScreenActivity extends AppCompatActivity {
                         gotoNextScreen();
                     }
 
-                });
+                });*/
             }
         });
-        loadAdsInter();
+        //loadAdsInter();
     }
 
     private void gotoNextScreen() {

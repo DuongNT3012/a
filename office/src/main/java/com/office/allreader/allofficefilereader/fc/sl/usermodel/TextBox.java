@@ -1,0 +1,6 @@
+
+
+package com.office.allreader.allofficefilereader.fc.sl.usermodel;
+
+public interface TextBox extends AutoShape {
+}

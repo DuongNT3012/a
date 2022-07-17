@@ -67,7 +67,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/_10sdp">
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="gone">
 
                 <include layout="@layout/ads_shimmer_native_language" />
             </FrameLayout>

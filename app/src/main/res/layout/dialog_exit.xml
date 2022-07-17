@@ -1,50 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     android:background="@drawable/dialog_rate_border"
-    android:layout_height="wrap_content">
+    android:orientation="vertical">
+
     <FrameLayout
         android:id="@+id/exit_native_ads"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
         android:layout_marginVertical="10dp"
         android:background="#E3E2E2"
-        android:visibility="visible"
-        android:layout_marginHorizontal="@dimen/_5sdp"
-        >
+        android:visibility="gone">
 
         <include layout="@layout/ads_native_shimer" />
     </FrameLayout>
+
     <TextView
-        android:textSize="@dimen/_15sdp"
-        android:paddingVertical="10dp"
-        android:textColor="@color/black_font"
-        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:paddingVertical="10dp"
         android:text="@string/exit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
     <LinearLayout
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:weightSum="2"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
         <ImageView
             android:id="@+id/btnCancel"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/btn_cancel"
-            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="60dp"/>
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/btn_cancel" />
+
         <ImageView
             android:id="@+id/btnQuit"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/btn_quit"
-            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="60dp"/>
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/btn_quit" />
     </LinearLayout>
 </LinearLayout>

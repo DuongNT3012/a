@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.document.allreader.allofficefilereader" >
+    package="com.office.allreader.allofficefilereader" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -73,7 +73,7 @@
         <!-- android:resource="@xml/provider_paths" /> -->
         <!-- </provider> -->
 
-        <receiver android:name="com.document.allreader.allofficefilereader.utils.Receiver" />
+        <receiver android:name="com.office.allreader.allofficefilereader.utils.Receiver" />
 
         <activity
             android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"

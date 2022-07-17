@@ -1,4 +1,4 @@
-com.document.allreader.allofficefilereader
+com.office.allreader.allofficefilereader
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -4643,7 +4643,6 @@ string excel_selected
 string excel_to_pdf
 string excel_tv_view_text
 string executive
-string exit
 string expand_button_title
 string exposed_dropdown_menu_content_description
 string extension_not_supported

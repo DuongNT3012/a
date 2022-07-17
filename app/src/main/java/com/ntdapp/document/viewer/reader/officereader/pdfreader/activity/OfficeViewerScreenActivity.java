@@ -329,7 +329,7 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
         initData();
         handleEvents();
         //ads
-        Admod.getInstance().loadBanner(OfficeViewerScreenActivity.this, getString(com.ntdapp.document.viewer.reader.officereader.pdfreader.R.string.banner_all));
+        //Admod.getInstance().loadBanner(OfficeViewerScreenActivity.this, getString(R.string.banner_all));
 
         fromSplash = getIntent().getBooleanExtra("fromSplash", false);
     }

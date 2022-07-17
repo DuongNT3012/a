@@ -4642,7 +4642,6 @@ int string excel_selected 0x0
 int string excel_to_pdf 0x0
 int string excel_tv_view_text 0x0
 int string executive 0x0
-int string exit 0x0
 int string expand_button_title 0x0
 int string exposed_dropdown_menu_content_description 0x0
 int string extension_not_supported 0x0

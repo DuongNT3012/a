@@ -64,7 +64,7 @@ class ShotViewerScrenActivity : AppCompatActivity() {
         initData()
         handleEvents()
         //ads
-        Admod.getInstance().loadBanner(this@ShotViewerScrenActivity,getString(R.string.banner_all));
+        //Admod.getInstance().loadBanner(this@ShotViewerScrenActivity,getString(R.string.banner_all));
     }
 
     private fun initData() {

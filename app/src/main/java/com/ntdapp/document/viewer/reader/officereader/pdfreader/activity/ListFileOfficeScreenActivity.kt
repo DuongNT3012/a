@@ -72,13 +72,12 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
             }
         }
         setContentView(R.layout.activity_list_office)
-        loadAds()
+        //loadAds()
         initData()
         handleEvents()
         //ads
-        loadAdsInter()
-        Admod.getInstance()
-            .loadBanner(this@ListFileOfficeScreenActivity, getString(R.string.banner_all));
+        //loadAdsInter()
+        //Admod.getInstance().loadBanner(this@ListFileOfficeScreenActivity, getString(R.string.banner_all));
     }
 
     override fun onItemClick(name: String, url: String) {
@@ -403,10 +402,10 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
     }
 
     private fun showAds() {
-        //gotoNextScreen()
+        gotoNextScreen()
 
 
-        Admod.getInstance()
+        /*Admod.getInstance()
             .showInterAds(
                 this@ListFileOfficeScreenActivity,
                 mInterstitialAd,
@@ -421,7 +420,7 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
                     override fun onAdFailedToLoad(i: LoadAdError) {
                         onAdClosed()
                     }
-                })
+                })*/
 
     }
 

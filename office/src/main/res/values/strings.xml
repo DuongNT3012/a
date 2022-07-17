@@ -654,7 +654,6 @@
 
     <!--  FAQs  -->
     <string name="faqSearch">Search FAQ</string>
-    <string name="exit">Are you sure to quit this app ?</string>
     <string name="pdf_files_will_appear_here_after_you_create_any">PDF files will appear here\n after you create any.</string>
     <string-array name="faq_question_answers">
         <item>What image file formats are supported?#####The app supports jpeg, jpg, tiff, gif, psd, bmp, eps, png, etc.</item>
