@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Office Reader</string>
+    <string name="app_name" translatable="false">Document Reader</string>
 
     <!--    ads test-->
     <string name="app_id" translatable="false">ca-app-pub-4973559944609228~2346710863</string>
@@ -91,4 +91,6 @@
     <string name="More_app">More Apps</string>
     <string name="exit">Are you sure to quit this app ?</string>
     <string name="send_feedback">Send FeedBack</string>
+    <string name="sys_share_title" translatable="false">Sending mail…</string>
+    <string name="sys_url_wxiwei" translatable="false">https://my.oschina.net/wxiwei</string>
 </resources>

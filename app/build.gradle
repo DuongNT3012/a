@@ -7,7 +7,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 32
     defaultConfig {
-        applicationId "com.document.officereader"
+        applicationId "com.ntdapp.document.viewer.reader.officereader.pdfreader"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 100

@@ -91,7 +91,7 @@
                 android:background="@drawable/bg_crop_two"
                 android:padding="@dimen/_10sdp">
 
-                <com.document.officereader.customview.cropper.CropImageView
+                <com.ntdapp.document.viewer.reader.officereader.pdfreader.customview.cropper.CropImageView
                     android:id="@+id/cropImageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -99,7 +99,7 @@
                     android:visibility="visible" />
 
 
-                <com.document.officereader.customview.drawingview.DrawingView
+                <com.ntdapp.document.viewer.reader.officereader.pdfreader.customview.drawingview.DrawingView
                     android:id="@+id/drawingView"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -129,7 +129,7 @@
         android:paddingHorizontal="@dimen/_5sdp"
         android:paddingTop="@dimen/_5sdp">
 
-        <com.document.officereader.customview.drawingview.BrushView
+        <com.ntdapp.document.viewer.reader.officereader.pdfreader.customview.drawingview.BrushView
             android:id="@+id/brushView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

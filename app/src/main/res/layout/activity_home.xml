@@ -763,7 +763,7 @@
                 </FrameLayout>
 
 
-                <com.document.officereader.nativeads.TemplateView
+                <com.ntdapp.document.viewer.reader.officereader.pdfreader.nativeads.TemplateView
                     android:id="@+id/template"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_400sdp"

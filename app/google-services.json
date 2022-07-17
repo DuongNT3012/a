@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "683966287971",
-    "project_id": "office-reader-92c28",
-    "storage_bucket": "office-reader-92c28.appspot.com"
+    "project_number": "827609479411",
+    "project_id": "trustofficereader",
+    "storage_bucket": "trustofficereader.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:683966287971:android:69810ae952e80e797b6856",
+        "mobilesdk_app_id": "1:827609479411:android:982d55cebbf81347d49f86",
         "android_client_info": {
-          "package_name": "com.document.officereader"
+          "package_name": "com.ntdapp.document.viewer.reader.officereader.pdfreader"
         }
       },
       "oauth_client": [
         {
-          "client_id": "683966287971-4505mmpgbu77pikjut2hopvh59she8g1.apps.googleusercontent.com",
+          "client_id": "827609479411-jdja54hrhinvr16uot62j8s2r5qi3j58.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBS251K3sbssZB_MByXusiAeGnXBUoggAM"
+          "current_key": "AIzaSyDj8Ya-90aMSndNkKKFkc0K3fOwQbevDIQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "683966287971-4505mmpgbu77pikjut2hopvh59she8g1.apps.googleusercontent.com",
+              "client_id": "827609479411-jdja54hrhinvr16uot62j8s2r5qi3j58.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

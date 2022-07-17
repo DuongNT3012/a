@@ -12,7 +12,7 @@
         android:id="@+id/rl_about_top"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_70sdp"
-        android:background="@drawable/bg_toolbar_about">
+        android:background="#F44336">
 
         <ImageView
             android:id="@+id/back_about"
