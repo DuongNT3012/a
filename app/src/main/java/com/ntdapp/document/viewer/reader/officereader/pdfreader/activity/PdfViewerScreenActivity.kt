@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.amazic.ads.util.Admod
 import com.amazic.ads.util.AppOpenManager
+import com.example.ads.AppIronSource
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Utils
 import com.github.barteksc.pdfviewer.listener.OnPageChangeListener
@@ -58,6 +59,11 @@ class PdfViewerScreenActivity : AppCompatActivity() {
         //ads
         //Admod.getInstance().loadBanner(this@PdfViewerScreenActivity, getString(R.string.banner_all));
         fromSplash = intent.getBooleanExtra("fromSplash", false)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        AppIronSource.getInstance().loadBanner(this)
     }
 
     override fun onResume() {

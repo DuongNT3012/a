@@ -25,6 +25,7 @@ import androidx.core.view.GravityCompat
 import com.amazic.ads.callback.NativeCallback
 import com.amazic.ads.util.Admod
 import com.amazic.ads.util.AppOpenManager
+import com.example.ads.AppIronSource
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 import com.google.android.play.core.review.ReviewInfo
@@ -76,6 +77,10 @@ class HomeScreenActivity : AppCompatActivity() {
         //loadadsNavHome()
     }
 
+    override fun onStart() {
+        super.onStart()
+        AppIronSource.getInstance().loadBanner(this)
+    }
 
     override fun onRequestPermissionsResult(
         requestCode: Int,

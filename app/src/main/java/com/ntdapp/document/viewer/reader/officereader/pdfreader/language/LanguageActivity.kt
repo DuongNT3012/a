@@ -9,13 +9,15 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.amazic.ads.callback.NativeCallback
 import com.amazic.ads.util.Admod
+import com.example.ads.AppIronSource
+import com.example.ads.funtion.AdCallback
+import com.google.android.gms.ads.nativead.NativeAd
+import com.google.android.gms.ads.nativead.NativeAdView
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.IntroScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.language.adapter.LanguageAdapterMain
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.CheckInternet
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.SystemUtil
-import com.google.android.gms.ads.nativead.NativeAd
-import com.google.android.gms.ads.nativead.NativeAdView
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.IntroScreenActivity
 import kotlinx.android.synthetic.main.activity_language.*
 
 class LanguageActivity : AppCompatActivity(), IClickLanguage {
@@ -37,6 +39,12 @@ class LanguageActivity : AppCompatActivity(), IClickLanguage {
         }*/
         //fr_ads.visibility = View.VISIBLE
         //loadNativeLanguage()
+
+
+        // Ads Inter
+        if (!AppIronSource.getInstance().isInterstitialReady) {
+            AppIronSource.getInstance().loadInterstitial(this, AdCallback())
+        }
 
         adapter = LanguageAdapterMain(this, setLanguageDefault(), this)
         rcl_language.adapter = adapter
@@ -78,33 +86,26 @@ class LanguageActivity : AppCompatActivity(), IClickLanguage {
         if (model != null) {
             SystemUtil.setPreLanguage(this@LanguageActivity, model.isoLanguage)
         }
-        /*val editor = getSharedPreferences("MY_PRE", MODE_PRIVATE).edit()
-        editor.putBoolean("nativeLanguage", true)
-        editor.apply()*/
         SystemUtil.setLocale(this)
-        startSubOrTur()
-        finish()
+        startNextActivity()
     }
 
-    private fun startSubOrTur() {
-        /*if (Constants.remoteSub && !AppPurchase.getInstance().isPurchased(this)) {
-            val bundle = Bundle()
-            bundle.putString(Constants.KEY_SCREEN, Constants.KEY_LANGUAGE)
-            if (Constants.verSub == "v0") {
-                showActivity(SubPremiumActivity::class.java, bundle)
-            } else {
-                showActivity(SubVerTwoActivity::class.java, bundle)
-            }
+    private fun startNextActivity() {
+        if (AppIronSource.getInstance().isInterstitialReady) {
+            AppIronSource.getInstance()
+                .showInterstitial(this@LanguageActivity, object : AdCallback() {
+                    override fun onAdClosed() {
+                        super.onAdClosed()
+                        val intent = Intent(this@LanguageActivity, IntroScreenActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
+                })
         } else {
-            showActivity(TutorialActivity::class.java, null)
-        }*/
-        showActivity(IntroScreenActivity::class.java, null)
-    }
-
-    private fun showActivity(activity: Class<*>, bundle: Bundle?) {
-        val intent = Intent(this, activity)
-        intent.putExtras(bundle ?: Bundle())
-        startActivity(intent)
+            val intent = Intent(this, IntroScreenActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun loadNativeLanguage() {

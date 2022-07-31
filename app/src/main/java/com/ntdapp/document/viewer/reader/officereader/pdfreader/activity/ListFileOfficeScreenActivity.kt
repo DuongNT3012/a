@@ -20,7 +20,8 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.amazic.ads.callback.InterCallback
 import com.amazic.ads.util.Admod
-import com.google.android.gms.ads.LoadAdError
+import com.example.ads.AppIronSource
+import com.example.ads.funtion.AdCallback
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.HomeScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.OfficeViewerScreenActivity
@@ -30,9 +31,6 @@ import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Utils
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Utils.getAllFileFavorites
 import kotlinx.android.synthetic.main.activity_list_office.*
-import kotlinx.android.synthetic.main.activity_list_office.btnBack
-import kotlinx.android.synthetic.main.activity_list_office.edtSearch
-import kotlinx.android.synthetic.main.activity_list_office.txtTitle
 import kotlinx.android.synthetic.main.layout_dialog_order.*
 import java.io.File
 
@@ -73,11 +71,20 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
         }
         setContentView(R.layout.activity_list_office)
         //loadAds()
+        //init ads
+        if (!AppIronSource.getInstance().isInterstitialReady) {
+            AppIronSource.getInstance().loadInterstitial(this@ListFileOfficeScreenActivity, AdCallback())
+        }
         initData()
         handleEvents()
         //ads
         //loadAdsInter()
         //Admod.getInstance().loadBanner(this@ListFileOfficeScreenActivity, getString(R.string.banner_all));
+    }
+
+    override fun onStart() {
+        super.onStart()
+        AppIronSource.getInstance().loadBanner(this)
     }
 
     override fun onItemClick(name: String, url: String) {
@@ -402,9 +409,21 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
     }
 
     private fun showAds() {
-        gotoNextScreen()
-
-
+        if (AppIronSource.getInstance().isInterstitialReady) {
+            AppIronSource.getInstance()
+                .showInterstitial(this@ListFileOfficeScreenActivity, object : AdCallback() {
+                    override fun onAdClosed() {
+                        super.onAdClosed()
+                        gotoNextScreen()
+                        //init ads
+                        if (!AppIronSource.getInstance().isInterstitialReady) {
+                            AppIronSource.getInstance().loadInterstitial(this@ListFileOfficeScreenActivity, AdCallback())
+                        }
+                    }
+                })
+        } else {
+            gotoNextScreen()
+        }
         /*Admod.getInstance()
             .showInterAds(
                 this@ListFileOfficeScreenActivity,

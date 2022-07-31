@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.amazic.ads.util.Admod
 import com.amazic.ads.util.AppOpenManager
+import com.example.ads.AppIronSource
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.BuildConfig
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
@@ -65,6 +66,11 @@ class ShotViewerScrenActivity : AppCompatActivity() {
         handleEvents()
         //ads
         //Admod.getInstance().loadBanner(this@ShotViewerScrenActivity,getString(R.string.banner_all));
+    }
+
+    override fun onStart() {
+        super.onStart()
+        AppIronSource.getInstance().loadBanner(this)
     }
 
     private fun initData() {

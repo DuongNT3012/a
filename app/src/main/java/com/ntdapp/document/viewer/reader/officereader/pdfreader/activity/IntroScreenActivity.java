@@ -20,6 +20,8 @@ import android.widget.TextView;
 
 import com.amazic.ads.callback.InterCallback;
 import com.amazic.ads.util.Admod;
+import com.example.ads.AppIronSource;
+import com.example.ads.funtion.AdCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.R;
@@ -53,6 +55,10 @@ public class IntroScreenActivity extends AppCompatActivity {
             }
         }
         setContentView(R.layout.activity_intro_screen);
+        //init ads
+        if (!AppIronSource.getInstance().isInterstitialReady()) {
+            AppIronSource.getInstance().loadInterstitial(this, new AdCallback());
+        }
         tv_skip = findViewById(R.id.tv_skip);
         tv_next = findViewById(R.id.tv_next);
         tv_back = findViewById(R.id.tv_back);
@@ -138,7 +144,6 @@ public class IntroScreenActivity extends AppCompatActivity {
                         tv_next.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                gotoNextScreen();
                                 /*Admod.getInstance().showInterAds(IntroScreenActivity.this, mInterstitialAd, new InterCallback() {
                                     @Override
                                     public void onAdClosed() {
@@ -151,6 +156,17 @@ public class IntroScreenActivity extends AppCompatActivity {
                                     }
 
                                 });*/
+                                if (AppIronSource.getInstance().isInterstitialReady()) {
+                                    AppIronSource.getInstance().showInterstitial(IntroScreenActivity.this, new AdCallback() {
+                                        @Override
+                                        public void onAdClosed() {
+                                            super.onAdClosed();
+                                            gotoNextScreen();
+                                        }
+                                    });
+                                } else {
+                                    gotoNextScreen();
+                                }
                             }
                         });
                         tv_skip.setVisibility(View.INVISIBLE);
@@ -161,8 +177,6 @@ public class IntroScreenActivity extends AppCompatActivity {
         tv_skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoNextScreen();
-
                 /*Admod.getInstance().showInterAds(IntroScreenActivity.this, mInterstitialAd, new InterCallback() {
                     @Override
                     public void onAdClosed() {
@@ -175,6 +189,17 @@ public class IntroScreenActivity extends AppCompatActivity {
                     }
 
                 });*/
+                if (AppIronSource.getInstance().isInterstitialReady()) {
+                    AppIronSource.getInstance().showInterstitial(IntroScreenActivity.this, new AdCallback() {
+                        @Override
+                        public void onAdClosed() {
+                            super.onAdClosed();
+                            gotoNextScreen();
+                        }
+                    });
+                } else {
+                    gotoNextScreen();
+                }
             }
         });
         //loadAdsInter();

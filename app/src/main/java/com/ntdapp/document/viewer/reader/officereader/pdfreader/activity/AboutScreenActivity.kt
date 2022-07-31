@@ -9,6 +9,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.amazic.ads.util.Admod
 import com.amazic.ads.util.AppOpenManager
+import com.example.ads.AppIronSource
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.BuildConfig
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
 import kotlinx.android.synthetic.main.activity_about_screen.*
@@ -44,6 +45,11 @@ class AboutScreenActivity : AppCompatActivity() {
         tv_ver.text = resources.getString(R.string.Version) + " " + versionName
         //ads
         //Admod.getInstance().loadBanner(this@AboutScreenActivity, getString(R.string.banner_all));
+    }
+
+    override fun onStart() {
+        super.onStart()
+        AppIronSource.getInstance().loadBanner(this)
     }
 
     override fun onResume() {

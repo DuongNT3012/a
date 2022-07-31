@@ -9,17 +9,19 @@ import android.os.Handler
 import android.util.Log
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.amazic.ads.callback.InterCallback
 import com.amazic.ads.util.Admod
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.language.LanguageActivity
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.CheckInternet
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.SystemUtil
+import com.example.ads.AppIronSource
+import com.example.ads.funtion.AdCallback
+import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.LoadAdError
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.HomeScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.OfficeViewerScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.PdfViewerScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.SharePrefUtils
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.language.LanguageActivity
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.CheckInternet
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.SystemUtil
 
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -36,14 +38,6 @@ class SplashScreenActivity : AppCompatActivity() {
         val uri = intent.data
         if (uri != null) {
             val file = SystemUtil.fileFromContentUri(this@SplashScreenActivity, uri)
-            Log.d(
-                "TAG",
-                "onCreateUri: $file"
-            )
-            /*Log.d(
-                "TAG",
-                "onCreateUri: $uri \n ${Constants.getPathFromUri(this@SplashScreenActivity, uri)}"
-            )*/
             var intent: Intent? = null
             var path: String? = null
             try {
@@ -76,7 +70,43 @@ class SplashScreenActivity : AppCompatActivity() {
                                     onAdClosed()
                                 }
                             })
-                } else {*/
+                } else {
+                    intent = Intent(this@SplashScreenActivity, PdfViewerScreenActivity::class.java)
+                    intent.putExtra(Constants.URL, path)
+                    intent.putExtra("fromSplash", true)
+                    Handler().postDelayed(Runnable {
+                        startActivity(intent)
+                        finish()
+                    }, 2000)
+                }*/
+                if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+                    AppIronSource.getInstance().init(this, getString(R.string.key_IS), false)
+                    AppIronSource.getInstance().loadSplashInterstitial(this, object : AdCallback() {
+                        override fun onAdClosed() {
+                            super.onAdClosed()
+                            intent = Intent(
+                                this@SplashScreenActivity,
+                                PdfViewerScreenActivity::class.java
+                            )
+                            intent?.putExtra(Constants.URL, path)
+                            intent?.putExtra("fromSplash", true)
+                            Handler().postDelayed(Runnable {
+                                startActivity(intent)
+                                finish()
+                            }, 2000)
+                        }
+
+                        override fun onAdFailedToLoad(i: LoadAdError) {
+                            super.onAdFailedToLoad(i)
+                            onAdClosed()
+                        }
+
+                        override fun onAdFailedToShow(adError: AdError) {
+                            super.onAdFailedToShow(adError)
+                            onAdClosed()
+                        }
+                    }, 30000)
+                } else {
                     intent = Intent(this@SplashScreenActivity, PdfViewerScreenActivity::class.java)
                     intent?.putExtra(Constants.URL, path)
                     intent?.putExtra("fromSplash", true)
@@ -84,7 +114,7 @@ class SplashScreenActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }, 2000)
-                /*}*/
+                }
             } else {
                 /*if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                     Admod.getInstance()
@@ -110,7 +140,45 @@ class SplashScreenActivity : AppCompatActivity() {
                                     onAdClosed()
                                 }
                             })
-                } else {*/
+                } else {
+                    intent =
+                        Intent(this@SplashScreenActivity, OfficeViewerScreenActivity::class.java)
+                    intent.putExtra(Constants.URL, path)
+                    intent.putExtra("fromSplash", true)
+                    Handler().postDelayed(Runnable {
+                        startActivity(intent)
+                        finish()
+                    }, 2000)
+                }*/
+                if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+                    AppIronSource.getInstance().init(this, getString(R.string.key_IS), false)
+                    AppIronSource.getInstance().loadSplashInterstitial(this, object : AdCallback() {
+                        override fun onAdClosed() {
+                            super.onAdClosed()
+                            intent =
+                                Intent(
+                                    this@SplashScreenActivity,
+                                    OfficeViewerScreenActivity::class.java
+                                )
+                            intent?.putExtra(Constants.URL, path)
+                            intent?.putExtra("fromSplash", true)
+                            Handler().postDelayed(Runnable {
+                                startActivity(intent)
+                                finish()
+                            }, 2000)
+                        }
+
+                        override fun onAdFailedToLoad(i: LoadAdError) {
+                            super.onAdFailedToLoad(i)
+                            onAdClosed()
+                        }
+
+                        override fun onAdFailedToShow(adError: AdError) {
+                            super.onAdFailedToShow(adError)
+                            onAdClosed()
+                        }
+                    }, 30000)
+                } else {
                     intent =
                         Intent(this@SplashScreenActivity, OfficeViewerScreenActivity::class.java)
                     intent?.putExtra(Constants.URL, path)
@@ -119,10 +187,10 @@ class SplashScreenActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }, 2000)
-                /*}*/
+                }
             }
         } else {
-            Admod.getInstance().setOpenActivityAfterShowInterAds(false)
+            //Admod.getInstance().setOpenActivityAfterShowInterAds(false)
             /*if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                 Admod.getInstance()
                     .loadSplashInterAds(
@@ -140,11 +208,34 @@ class SplashScreenActivity : AppCompatActivity() {
                                 loadAds()
                             }
                         })
-            } else {*/
+            } else {
                 Handler().postDelayed(Runnable {
                     loadAds()
                 }, 2000)
-            /*}*/
+            }*/
+            if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+                AppIronSource.getInstance().init(this, getString(R.string.key_IS), false)
+                AppIronSource.getInstance().loadSplashInterstitial(this, object : AdCallback() {
+                    override fun onAdClosed() {
+                        super.onAdClosed()
+                        gotoNextScreen()
+                    }
+
+                    override fun onAdFailedToLoad(i: LoadAdError) {
+                        super.onAdFailedToLoad(i)
+                        onAdClosed()
+                    }
+
+                    override fun onAdFailedToShow(adError: AdError) {
+                        super.onAdFailedToShow(adError)
+                        onAdClosed()
+                    }
+                }, 30000)
+            } else {
+                Handler().postDelayed(Runnable {
+                    gotoNextScreen()
+                }, 1500)
+            }
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -159,10 +250,6 @@ class SplashScreenActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_splash)
         SharePrefUtils.increaseCountOpenApp(this)
-    }
-
-    private fun loadAds() {
-        gotoNextScreen()
     }
 
     private fun gotoNextScreen() {

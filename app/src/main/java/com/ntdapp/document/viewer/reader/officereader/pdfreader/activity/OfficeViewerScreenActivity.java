@@ -35,6 +35,7 @@ import androidx.core.content.FileProvider;
 
 import com.amazic.ads.util.Admod;
 import com.amazic.ads.util.AppOpenManager;
+import com.example.ads.AppIronSource;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.BuildConfig;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.R;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.ScreenShotScreenActivity;
@@ -334,6 +335,11 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
         fromSplash = getIntent().getBooleanExtra("fromSplash", false);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        AppIronSource.getInstance().loadBanner(this);
+    }
 
     private void initData() {
         fab = findViewById(com.ntdapp.document.viewer.reader.officereader.pdfreader.R.id.fab);

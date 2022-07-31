@@ -23,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.amazic.ads.util.Admod
 import com.amazic.ads.util.AppOpenManager
+import com.example.ads.AppIronSource
 import com.nvt.color.ColorPickerDialog
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.PdfViewerScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.customview.cropper.CropImageView
@@ -80,6 +81,7 @@ class ScreenShotScreenActivity : AppCompatActivity(), CropImageView.OnSetImageUr
         cropImageView.setOnSetImageUriCompleteListener(this)
         cropImageView.setOnCropImageCompleteListener(this)
         super.onStart()
+        AppIronSource.getInstance().loadBanner(this);
     }
 
     private fun initData() {

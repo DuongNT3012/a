@@ -34,6 +34,6 @@ public class MyApplication extends AdsApplication {
 
     @Override
     public String getResumeAdId() {
-        return getString(R.string.appopen_resume);
+        return "";
     }
 }
