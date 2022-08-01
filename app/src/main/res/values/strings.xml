@@ -4,6 +4,8 @@
     //key is test
     <string name="key_IS" translatable="false">85460dcd</string>
 
+    //key is real
+    <!--<string name="key_IS" translatable="false">15d6feccd</string>-->
 
 
     <!--    ads test-->
