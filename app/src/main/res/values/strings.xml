@@ -14,15 +14,15 @@
 
 
     <!--    ads real-->
-<!--    <string name="app_id" translatable="false"></string>-->
-<!--    <string name="inter_splash" translatable="false"></string>-->
-<!--    <string name="inter_intro" translatable="false"></string>-->
-<!--    <string name="appopen_resume" translatable="false"></string>-->
-<!--    <string name="banner_all" translatable="false"></string>-->
-<!--    <string name="native_exit" translatable="false"></string>-->
-<!--    <string name="inter_file" translatable="false"></string>-->
-<!--    <string name="native_home" translatable="false"></string>-->
-<!--    <string name="native_language" translatable="false"></string>-->
+<!--    <string name="app_id" translatable="false">ca-app-pub-2049543423319084~2789000932</string>-->
+<!--    <string name="inter_splash" translatable="false">ca-app-pub-2049543423319084/8971265902</string>-->
+<!--    <string name="inter_intro" translatable="false">ca-app-pub-2049543423319084/3718939221</string>-->
+<!--    <string name="appopen_resume" translatable="false">ca-app-pub-2049543423319084/4840449201</string>-->
+<!--    <string name="banner_all" translatable="false">ca-app-pub-2049543423319084/3821228610</string>-->
+<!--    <string name="native_exit" translatable="false">ca-app-pub-2049543423319084/4648877510</string>-->
+<!--    <string name="inter_file" translatable="false">ca-app-pub-2049543423319084/9709632503</string>-->
+<!--    <string name="native_home" translatable="false">ca-app-pub-2049543423319084/5770387494</string>-->
+<!--    <string name="native_language" translatable="false">ca-app-pub-2049543423319084/9518060812</string>-->
 
     <string name="type_the_page_number">Type the page number</string>
     <string name="cancel">Cancel</string>

@@ -1,4 +1,4 @@
-package com.ntdapp.document.viewer.reader.officereader.pdfreader
+package com.ntdapp.document.viewer.reader.officereader.pdfreader.activity
 
 import android.app.Dialog
 import android.content.Intent
@@ -23,8 +23,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.amazic.ads.util.Admod
 import com.amazic.ads.util.AppOpenManager
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
 import com.nvt.color.ColorPickerDialog
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.PdfViewerScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.customview.cropper.CropImageView
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.customview.drawingview.brushes.BrushSettings
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Utils
@@ -73,7 +73,7 @@ class ScreenShotScreenActivity : AppCompatActivity(), CropImageView.OnSetImageUr
         setupDrawingView()
         handleEvents()
         //ads
-        //Admod.getInstance().loadBanner(this@ScreenShotScreenActivity, getString(R.string.banner_all));
+        Admod.getInstance().loadBanner(this@ScreenShotScreenActivity, getString(R.string.banner_all));
     }
 
     override fun onStart() {

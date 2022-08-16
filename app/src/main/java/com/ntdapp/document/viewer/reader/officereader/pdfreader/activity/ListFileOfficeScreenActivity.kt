@@ -1,4 +1,4 @@
-package com.ntdapp.document.viewer.reader.officereader.pdfreader
+package com.ntdapp.document.viewer.reader.officereader.pdfreader.activity
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -22,9 +22,8 @@ import com.amazic.ads.callback.InterCallback
 import com.amazic.ads.util.Admod
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.HomeScreenActivity
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.OfficeViewerScreenActivity
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.PdfViewerScreenActivity
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.ShotViewerScrenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.adapter.ListFileOfficeAdapter
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Utils
@@ -76,8 +75,8 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
         initData()
         handleEvents()
         //ads
-        //loadAdsInter()
-        //Admod.getInstance().loadBanner(this@ListFileOfficeScreenActivity, getString(R.string.banner_all));
+        loadAdsInter()
+        Admod.getInstance().loadBanner(this@ListFileOfficeScreenActivity, getString(R.string.banner_all));
     }
 
     override fun onItemClick(name: String, url: String) {
@@ -402,10 +401,10 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
     }
 
     private fun showAds() {
-        gotoNextScreen()
+        //gotoNextScreen()
 
 
-        /*Admod.getInstance()
+        Admod.getInstance()
             .showInterAds(
                 this@ListFileOfficeScreenActivity,
                 mInterstitialAd,
@@ -420,7 +419,7 @@ class ListFileOfficeScreenActivity : AppCompatActivity(), ListFileOfficeAdapter.
                     override fun onAdFailedToLoad(i: LoadAdError) {
                         onAdClosed()
                     }
-                })*/
+                })
 
     }
 

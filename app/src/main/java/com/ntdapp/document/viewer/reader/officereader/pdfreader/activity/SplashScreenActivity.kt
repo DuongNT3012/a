@@ -1,4 +1,4 @@
-package com.ntdapp.document.viewer.reader.officereader.pdfreader
+package com.ntdapp.document.viewer.reader.officereader.pdfreader.activity
 
 import android.content.Context
 import android.content.Intent
@@ -11,15 +11,12 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.amazic.ads.callback.InterCallback
 import com.amazic.ads.util.Admod
+import com.google.android.gms.ads.LoadAdError
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.language.LanguageActivity
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.CheckInternet
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.SystemUtil
-import com.google.android.gms.ads.LoadAdError
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.HomeScreenActivity
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.OfficeViewerScreenActivity
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.PdfViewerScreenActivity
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.SharePrefUtils
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.CheckInternet
 
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -52,7 +49,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 path = file.absolutePath
             }
             if (path?.contains(".pdf") == true) {
-                /*if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+                if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                     Admod.getInstance()
                         .loadSplashInterAds(
                             this@SplashScreenActivity,
@@ -76,7 +73,7 @@ class SplashScreenActivity : AppCompatActivity() {
                                     onAdClosed()
                                 }
                             })
-                } else {*/
+                } else {
                     intent = Intent(this@SplashScreenActivity, PdfViewerScreenActivity::class.java)
                     intent?.putExtra(Constants.URL, path)
                     intent?.putExtra("fromSplash", true)
@@ -84,9 +81,9 @@ class SplashScreenActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }, 2000)
-                /*}*/
+                }
             } else {
-                /*if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+                if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                     Admod.getInstance()
                         .loadSplashInterAds(
                             this@SplashScreenActivity,
@@ -110,7 +107,7 @@ class SplashScreenActivity : AppCompatActivity() {
                                     onAdClosed()
                                 }
                             })
-                } else {*/
+                } else {
                     intent =
                         Intent(this@SplashScreenActivity, OfficeViewerScreenActivity::class.java)
                     intent?.putExtra(Constants.URL, path)
@@ -119,11 +116,11 @@ class SplashScreenActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }, 2000)
-                /*}*/
+                }
             }
         } else {
             Admod.getInstance().setOpenActivityAfterShowInterAds(false)
-            /*if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+            if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                 Admod.getInstance()
                     .loadSplashInterAds(
                         this@SplashScreenActivity,
@@ -140,11 +137,11 @@ class SplashScreenActivity : AppCompatActivity() {
                                 loadAds()
                             }
                         })
-            } else {*/
+            } else {
                 Handler().postDelayed(Runnable {
                     loadAds()
                 }, 2000)
-            /*}*/
+            }
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

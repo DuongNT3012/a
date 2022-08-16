@@ -20,7 +20,6 @@ import com.github.barteksc.pdfviewer.listener.OnPageChangeListener
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.BuildConfig
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.ScreenShotScreenActivity
 import kotlinx.android.synthetic.main.activity_pdf_viewer.*
 import kotlinx.android.synthetic.main.layout_dialog_gotopage.*
 import kotlinx.android.synthetic.main.view_fab.*
@@ -56,7 +55,7 @@ class PdfViewerScreenActivity : AppCompatActivity() {
         initData()
         handleEvents()
         //ads
-        //Admod.getInstance().loadBanner(this@PdfViewerScreenActivity, getString(R.string.banner_all));
+        Admod.getInstance().loadBanner(this@PdfViewerScreenActivity, getString(R.string.banner_all));
         fromSplash = intent.getBooleanExtra("fromSplash", false)
     }
 

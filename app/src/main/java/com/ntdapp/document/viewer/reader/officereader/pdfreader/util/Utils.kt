@@ -16,7 +16,7 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.SplashScreenActivity
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.SplashScreenActivity
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.ensureBackgroundThread
 import com.simplemobiletools.commons.helpers.isRPlus

@@ -20,11 +20,9 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
-import com.amazic.ads.util.Admod
 import com.amazic.ads.util.AppOpenManager
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.BuildConfig
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.R
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.ScreenShotScreenActivity
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Utils
 import kotlinx.android.synthetic.main.activity_screen_viewer.*

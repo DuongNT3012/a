@@ -37,7 +37,6 @@ import com.amazic.ads.util.Admod;
 import com.amazic.ads.util.AppOpenManager;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.BuildConfig;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.R;
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.ScreenShotScreenActivity;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Constants;
 import com.ntdapp.document.viewer.reader.officereader.pdfreader.util.Utils;
 import com.office.allreader.allofficefilereader.common.IOfficeToPicture;
@@ -329,7 +328,7 @@ public class OfficeViewerScreenActivity extends AppCompatActivity implements IMa
         initData();
         handleEvents();
         //ads
-        //Admod.getInstance().loadBanner(OfficeViewerScreenActivity.this, getString(R.string.banner_all));
+        Admod.getInstance().loadBanner(OfficeViewerScreenActivity.this, getString(R.string.banner_all));
 
         fromSplash = getIntent().getBooleanExtra("fromSplash", false);
     }

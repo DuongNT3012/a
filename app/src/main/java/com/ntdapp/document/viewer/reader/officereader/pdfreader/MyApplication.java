@@ -5,7 +5,7 @@ import android.os.StrictMode;
 
 import com.amazic.ads.util.AdsApplication;
 import com.amazic.ads.util.AppOpenManager;
-import com.ntdapp.document.viewer.reader.officereader.pdfreader.SplashScreenActivity;
+import com.ntdapp.document.viewer.reader.officereader.pdfreader.activity.SplashScreenActivity;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class MyApplication extends AdsApplication {
 
     @Override
     public boolean enableAdsResume() {
-        return false;
+        return true;
     }
 
     @Override
