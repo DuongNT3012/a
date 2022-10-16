@@ -73,7 +73,7 @@ class ScreenShotScreenActivity : AppCompatActivity(), CropImageView.OnSetImageUr
         setupDrawingView()
         handleEvents()
         //ads
-        Admod.getInstance().loadBanner(this@ScreenShotScreenActivity, getString(R.string.banner_all));
+        //Admod.getInstance().loadBanner(this@ScreenShotScreenActivity, getString(R.string.banner_all));
     }
 
     override fun onStart() {

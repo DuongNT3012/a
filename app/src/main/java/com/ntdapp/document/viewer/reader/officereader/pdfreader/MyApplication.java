@@ -24,7 +24,7 @@ public class MyApplication extends AdsApplication {
 
     @Override
     public boolean enableAdsResume() {
-        return true;
+        return false;
     }
 
     @Override

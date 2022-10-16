@@ -35,8 +35,7 @@ class LanguageActivity : AppCompatActivity(), IClickLanguage {
         } else {
             fr_ads.visibility = View.GONE
         }*/
-        fr_ads.visibility = View.VISIBLE
-        loadNativeLanguage()
+        //loadNativeLanguage()
 
         adapter = LanguageAdapterMain(this, setLanguageDefault(), this)
         rcl_language.adapter = adapter

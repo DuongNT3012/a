@@ -73,7 +73,7 @@ class HomeScreenActivity : AppCompatActivity() {
         handleEvents()
         setNav()
         //ads
-        loadadsNavHome()
+        //loadadsNavHome()
     }
 
 
@@ -734,7 +734,7 @@ class HomeScreenActivity : AppCompatActivity() {
         val view = LayoutInflater.from(this).inflate(R.layout.dialog_exit, null, false)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(view)
-        loadadsNavExit(view)
+        //loadadsNavExit(view)
 
         dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialog.setCancelable(false)
