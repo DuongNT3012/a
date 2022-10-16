@@ -43,7 +43,7 @@ class AboutScreenActivity : AppCompatActivity() {
         val versionName = BuildConfig.VERSION_NAME
         tv_ver.text = resources.getString(R.string.Version) + " " + versionName
         //ads
-        //Admod.getInstance().loadBanner(this@AboutScreenActivity, getString(R.string.banner_all));
+        Admod.getInstance().loadBanner(this@AboutScreenActivity, getString(R.string.banner_all));
     }
 
     override fun onResume() {

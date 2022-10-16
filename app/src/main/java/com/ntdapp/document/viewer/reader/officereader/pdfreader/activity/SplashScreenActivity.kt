@@ -49,7 +49,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 path = file.absolutePath
             }
             if (path?.contains(".pdf") == true) {
-                /*if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+                if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                     Admod.getInstance()
                         .loadSplashInterAds(
                             this@SplashScreenActivity,
@@ -73,7 +73,7 @@ class SplashScreenActivity : AppCompatActivity() {
                                     onAdClosed()
                                 }
                             })
-                } else {*/
+                } else {
                     intent = Intent(this@SplashScreenActivity, PdfViewerScreenActivity::class.java)
                     intent?.putExtra(Constants.URL, path)
                     intent?.putExtra("fromSplash", true)
@@ -81,9 +81,9 @@ class SplashScreenActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }, 2000)
-                //}
+                }
             } else {
-                /*if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
+                if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                     Admod.getInstance()
                         .loadSplashInterAds(
                             this@SplashScreenActivity,
@@ -107,7 +107,7 @@ class SplashScreenActivity : AppCompatActivity() {
                                     onAdClosed()
                                 }
                             })
-                } else {*/
+                } else {
                     intent =
                         Intent(this@SplashScreenActivity, OfficeViewerScreenActivity::class.java)
                     intent?.putExtra(Constants.URL, path)
@@ -116,10 +116,10 @@ class SplashScreenActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     }, 2000)
-                /*}*/
+                }
             }
         } else {
-            /*Admod.getInstance().setOpenActivityAfterShowInterAds(false)
+            Admod.getInstance().setOpenActivityAfterShowInterAds(false)
             if (CheckInternet(this@SplashScreenActivity).haveNetworkConnection()) {
                 Admod.getInstance()
                     .loadSplashInterAds(
@@ -137,11 +137,11 @@ class SplashScreenActivity : AppCompatActivity() {
                                 loadAds()
                             }
                         })
-            } else {*/
+            } else {
                 Handler().postDelayed(Runnable {
                     loadAds()
                 }, 2000)
-            /*}*/
+            }
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

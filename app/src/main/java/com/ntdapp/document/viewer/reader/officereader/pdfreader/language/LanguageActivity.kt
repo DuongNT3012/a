@@ -29,13 +29,8 @@ class LanguageActivity : AppCompatActivity(), IClickLanguage {
         // load and show ads native language
         sharedPreferences = getSharedPreferences("MY_PRE", MODE_PRIVATE)
 
-        /*if (!AppPurchase.getInstance().isPurchased(this)) {
-            fr_ads.visibility = View.VISIBLE
-            loadNativeLanguage()
-        } else {
-            fr_ads.visibility = View.GONE
-        }*/
-        //loadNativeLanguage()
+        fr_ads.visibility = View.VISIBLE
+        loadNativeLanguage()
 
         adapter = LanguageAdapterMain(this, setLanguageDefault(), this)
         rcl_language.adapter = adapter
